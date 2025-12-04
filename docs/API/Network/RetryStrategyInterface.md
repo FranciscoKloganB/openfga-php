@@ -21,7 +21,7 @@ Interface for implementing retry strategies. This interface defines the contract
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/RetryStrategyInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RetryStrategyInterface.php)
 
 ## Methods
 
@@ -34,7 +34,7 @@ public function execute(callable $operation, array<string, mixed> $config = []):
 
 Execute an operation with retry logic. Executes the given operation and retries it according to the strategy&#039;s implementation if it fails. The strategy determines when to retry, how long to wait between retries, and when to give up.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RetryStrategyInterface.php#L36)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RetryStrategyInterface.php#L36)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ public function getRetryDelay(int $attempt, array<string, mixed> $config = []): 
 
 Get the delay before the next retry attempt.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RetryStrategyInterface.php#L45)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RetryStrategyInterface.php#L45)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ public function isRetryable(Throwable $exception): bool
 
 Determine if an exception is retryable.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RetryStrategyInterface.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RetryStrategyInterface.php#L53)
 
 #### Parameters
 

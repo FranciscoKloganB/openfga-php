@@ -25,7 +25,7 @@ Represents a tuple-to-userset operation node in authorization evaluation trees. 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php)
 
 ## Implements
 
@@ -54,7 +54,7 @@ public function getComputed(): array<int, ComputedInterface>
 
 Get the array of computed usersets for the tuple-to-userset operation. This returns a collection of computed userset references that define how to resolve the users from the tuple-to-userset mapping in the tree expansion.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php#L58)
 
 #### Returns
 
@@ -69,7 +69,7 @@ public function getTupleset(): string
 
 Get the tupleset string identifying which tuples to use for computation. This string identifies the specific tupleset that should be used to resolve users through the tuple-to-userset operation during tree expansion.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php#L67)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php#L67)
 
 #### Returns
 
@@ -82,7 +82,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php#L76)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUserset.php#L76)
 
 #### Returns
 
@@ -99,7 +99,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

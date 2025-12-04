@@ -23,7 +23,7 @@ Represents the result of a single check within a batch check response. Each resu
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckSingleResultInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckSingleResultInterface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getAllowed(): ?bool
 
 Get whether this check was allowed. Returns true if the user has the specified relationship with the object, false if they don&#039;t, or null if the check encountered an error.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckSingleResultInterface.php#L25)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckSingleResultInterface.php#L25)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getError(): ?object
 
 Get any error that occurred during this check. Returns error information if the check failed to complete successfully, or null if the check completed without errors.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckSingleResultInterface.php#L35)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckSingleResultInterface.php#L35)
 
 #### Returns
 

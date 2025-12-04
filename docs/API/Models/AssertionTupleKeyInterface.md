@@ -24,7 +24,7 @@ Defines the contract for assertion tuple keys used in authorization model testin
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php)
 
 ## Implements
 
@@ -46,7 +46,7 @@ public function getObject(): string
 
 Get the object being tested in the assertion. This represents the resource or entity that the assertion is testing access to. In assertion testing, this is the object part of the tuple being validated against the authorization model.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L30)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L30)
 
 #### Returns
 
@@ -61,7 +61,7 @@ public function getRelation(): string
 
 Get the relation being tested in the assertion. This represents the type of relationship or permission being tested in the assertion. It defines what kind of access is being validated between the user and object.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L41)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L41)
 
 #### Returns
 
@@ -76,7 +76,7 @@ public function getUser(): string
 
 Get the user being tested in the assertion. This represents the subject (user, group, role, etc.) whose access is being tested in the assertion. It&#039;s the entity for which we&#039;re validating whether they have the specified relation to the object.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L52)
 
 #### Returns
 
@@ -89,7 +89,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/AssertionTupleKeyInterface.php#L62)
 
 #### Returns
 

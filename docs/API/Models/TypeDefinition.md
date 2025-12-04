@@ -26,7 +26,7 @@ Represents a type definition in your authorization model. A TypeDefinition defin
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinition.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinition.php)
 
 ## Implements
 
@@ -56,7 +56,7 @@ public function getMetadata(): ?OpenFGA\Models\MetadataInterface
 
 Get the metadata associated with this type definition. Metadata provides additional context, documentation, and configuration information for the type definition. This can include source file information, module details, and other development-time context.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinition.php#L61)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinition.php#L61)
 
 #### Returns
 
@@ -71,7 +71,7 @@ public function getRelations(): ?OpenFGA\Models\Collections\TypeDefinitionRelati
 
 Get the collection of relations defined for this type. Relations define the authorized relationships that can exist between objects of this type and other entities in the system.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinition.php#L70)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinition.php#L70)
 
 #### Returns
 
@@ -86,7 +86,7 @@ public function getType(): string
 
 Get the name of this type. The type name uniquely identifies this type definition within the authorization model. Common examples include &quot;user,&quot; &quot;document,&quot; &quot;folder,&quot; &quot;organization,&quot; etc.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinition.php#L79)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinition.php#L79)
 
 #### Returns
 
@@ -99,7 +99,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinition.php#L88)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinition.php#L88)
 
 #### Returns
 
@@ -116,7 +116,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

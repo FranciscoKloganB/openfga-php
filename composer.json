@@ -1,5 +1,5 @@
 {
-  "name": "evansims/openfga-php",
+  "name": "franciscokloganb/openfga-php",
   "description": "Stop writing authorization logic. Start asking questions. OpenFGA high performance relationship-based access control for PHP.",
   "license": "Apache-2.0",
   "type": "library",
@@ -23,15 +23,15 @@
   "authors": [
     {
       "name": "Evan Sims",
-      "email": "hello@evansims.com",
-      "homepage": "https://evansims.com/"
+      "email": "hello@franciscokloganb.com",
+      "homepage": "https://franciscokloganb.com/"
     }
   ],
-  "homepage": "https://github.com/evansims/openfga-php",
+  "homepage": "https://github.com/franciscokloganb/openfga-php",
   "support": {
-    "issues": "https://github.com/evansims/openfga-php/issues",
-    "source": "https://github.com/evansims/openfga-php",
-    "docs": "https://github.com/evansims/openfga-php#readme"
+    "issues": "https://github.com/franciscokloganb/openfga-php/issues",
+    "source": "https://github.com/franciscokloganb/openfga-php",
+    "docs": "https://github.com/franciscokloganb/openfga-php#readme"
   },
   "require": {
     "php": "^8.3",

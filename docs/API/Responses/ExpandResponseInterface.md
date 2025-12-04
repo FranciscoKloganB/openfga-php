@@ -21,7 +21,7 @@ Interface for relationship expansion response objects. This interface defines th
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/ExpandResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ExpandResponseInterface.php)
 
 ## Implements
 
@@ -43,7 +43,7 @@ public function getTree(): UsersetTreeInterface|null
 
 Get the expansion tree for the queried relationship. Returns a hierarchical tree structure that represents all users and usersets that have the specified relationship with the target object. The tree shows both direct relationships and computed relationships through other relations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ExpandResponseInterface.php#L45)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ExpandResponseInterface.php#L45)
 
 #### Returns
 

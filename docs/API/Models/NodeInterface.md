@@ -26,7 +26,7 @@ Represents a node in a userset tree structure. Nodes are fundamental building bl
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php)
 
 ## Implements
 
@@ -48,7 +48,7 @@ public function getDifference(): ?OpenFGA\Models\UsersetTreeDifferenceInterface
 
 Get the difference operation for this node. The difference operation represents a set subtraction where users from one set are excluded from another set.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php#L26)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php#L26)
 
 #### Returns
 
@@ -63,7 +63,7 @@ public function getIntersection(): NodeUnionInterface|self|null
 
 Get the intersection operation for this node. The intersection operation represents the common elements between multiple usersets in the authorization tree.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php#L36)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php#L36)
 
 #### Returns
 
@@ -78,7 +78,7 @@ public function getLeaf(): ?OpenFGA\Models\LeafInterface
 
 Get the leaf node if this is a terminal node. Leaf nodes represent the actual users, computed usersets, or tuple-to-userset relationships at the end of the evaluation tree.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php#L46)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php#L46)
 
 #### Returns
 
@@ -93,7 +93,7 @@ public function getName(): string
 
 Get the name identifier for this node. The name is used to identify the node within the authorization model and corresponds to relation names or other identifiers.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php#L56)
 
 #### Returns
 
@@ -108,7 +108,7 @@ public function getUnion(): NodeUnionInterface|self|null
 
 Get the union operation for this node. The union operation represents the combination of multiple usersets where users from any of the sets are included in the result.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php#L66)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php#L66)
 
 #### Returns
 
@@ -123,7 +123,7 @@ public function jsonSerialize(): array<string, mixed>
 
 Serialize the node to its JSON representation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeInterface.php#L74)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeInterface.php#L74)
 
 #### Returns
 

@@ -18,7 +18,7 @@ Interface for assertions writing response objects. This interface defines the co
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteAssertionsResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteAssertionsResponseInterface.php)
 
 ## Implements
 

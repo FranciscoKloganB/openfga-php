@@ -30,7 +30,7 @@ Supported languages for OpenFGA SDK internationalization. This enum represents a
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Language.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php)
 
 ## Implements
 
@@ -86,7 +86,7 @@ public function apply(): void
 
 Apply this language as the active translation locale. Sets this language as the default locale for all subsequent translation operations until changed or reset.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L137)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L137)
 
 #### Returns
 
@@ -101,7 +101,7 @@ public function displayName(): string
 
 Get the display name of the language in English. Returns the English name of the language for UI display and documentation purposes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L150)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L150)
 
 #### Returns
 
@@ -116,7 +116,7 @@ public function isActive(): bool
 
 Check if this language is the currently active locale. Determines whether this language is currently set as the default locale for translation operations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L178)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L178)
 
 #### Returns
 
@@ -131,7 +131,7 @@ public function isRightToLeft(): bool
 
 Check if this language uses right-to-left text direction. Useful for UI implementations that need to adjust layout direction based on the selected language.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L209)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L209)
 
 #### Returns
 
@@ -146,7 +146,7 @@ public function isoCode(): string
 
 Get the ISO 639-1 two-letter language code. Returns the base language code without region specifier. For regional variants, this returns the primary language code.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L191)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L191)
 
 #### Returns
 
@@ -161,7 +161,7 @@ public function locale(): string
 
 Get the locale code for this language. Returns the full locale identifier including any region specifier (for example, &quot;pt_BR&quot; for Brazilian Portuguese).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L224)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L224)
 
 #### Returns
 
@@ -176,7 +176,7 @@ public function nativeName(): string
 
 Get the native name of the language. Returns the language name as written in that language, useful for language selection interfaces.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L237)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L237)
 
 #### Returns
 
@@ -191,7 +191,7 @@ public function regionCode(): string|null
 
 Get the region code if this is a regional language variant. Returns the ISO 3166-1 alpha-2 country code for regional language variants, or null for generic language codes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L265)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L265)
 
 #### Returns
 
@@ -206,7 +206,7 @@ public function withLocale(callable $callback): T
 
 Execute a callback with this language as the active locale. Temporarily sets this language as the active locale, executes the provided callback, then restores the previous locale. This ensures proper cleanup even if the callback throws.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Language.php#L290)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Language.php#L290)
 
 #### Parameters
 

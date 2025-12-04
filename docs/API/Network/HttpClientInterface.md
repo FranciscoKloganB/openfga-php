@@ -19,7 +19,7 @@ HTTP client interface for sending HTTP requests. This interface abstracts the HT
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/HttpClientInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/HttpClientInterface.php)
 
 ## Methods
 
@@ -32,7 +32,7 @@ public function send(RequestInterface $request): ResponseInterface
 
 Send an HTTP request and return the response.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/HttpClientInterface.php#L28)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/HttpClientInterface.php#L28)
 
 #### Parameters
 

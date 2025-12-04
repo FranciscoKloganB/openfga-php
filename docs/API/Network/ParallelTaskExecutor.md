@@ -19,7 +19,7 @@ Executes tasks in parallel using the RequestManager infrastructure. This class p
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/ParallelTaskExecutor.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/ParallelTaskExecutor.php)
 
 ## Methods
 
@@ -36,7 +36,7 @@ public function execute(
 
 Execute tasks with specified parallelism.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/ParallelTaskExecutor.php#L34)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/ParallelTaskExecutor.php#L34)
 
 #### Parameters
 

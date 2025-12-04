@@ -22,7 +22,7 @@ Interface for retrieving information about an OpenFGA store. This interface defi
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Requests/GetStoreRequestInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/GetStoreRequestInterface.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getRequest(StreamFactoryInterface $streamFactory): RequestContex
 
 Build a request context for HTTP execution. Transforms the request object into a standardized HTTP request context that can be executed by the OpenFGA HTTP client. This method handles all aspects of request preparation including parameter serialization, URL construction, header configuration, and body stream creation. The method validates that all required parameters are present and properly formatted, serializes complex objects to JSON, constructs the appropriate API endpoint URL, and creates the necessary HTTP message body streams.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
 
 #### Parameters
 
@@ -65,7 +65,7 @@ public function getStore(): string
 
 Get the ID of the store to retrieve. Returns the unique identifier of the store whose information should be fetched. This will return metadata about the store including its name, creation timestamp, and other administrative details.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/GetStoreRequestInterface.php#L36)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/GetStoreRequestInterface.php#L36)
 
 #### Returns
 

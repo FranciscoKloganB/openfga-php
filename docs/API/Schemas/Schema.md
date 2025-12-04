@@ -23,7 +23,7 @@ JSON schema definition for validating and transforming data structures. This sch
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/Schema.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/Schema.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getClassName(): string
 
 Get the fully qualified class name this schema defines. This method returns the class name that this schema describes, which is used during validation and object instantiation to ensure the correct model class is created.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/Schema.php#L44)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/Schema.php#L44)
 
 #### Returns
 
@@ -59,7 +59,7 @@ public function getProperties(): array
 
 Get all properties defined in this schema. This method returns a comprehensive collection of all properties that make up this schema, including their validation rules, types, and default values. Each property defines how a specific field should be validated and processed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/Schema.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/Schema.php#L53)
 
 #### Returns
 
@@ -74,7 +74,7 @@ public function getProperty(string $name): ?OpenFGA\Schemas\SchemaProperty
 
 Get a specific property definition by name. This method retrieves the schema definition for a particular property, allowing you to access its validation rules, type information, and other metadata for individual fields.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/Schema.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/Schema.php#L62)
 
 #### Parameters
 

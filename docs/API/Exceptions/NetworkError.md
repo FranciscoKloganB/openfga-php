@@ -22,7 +22,7 @@ Network error types for the OpenFGA SDK. Defines specific network and HTTP-relat
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/NetworkError.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/NetworkError.php)
 
 ## Implements
 
@@ -73,7 +73,7 @@ public function exception(
 
 Create a new NetworkException for this error type. Factory method that creates a NetworkException instance with the current error type and provided context information. This provides a convenient way to generate typed exceptions with proper error categorization and rich debugging context for OpenFGA network failures. The exception will automatically capture the correct file and line location where this method was called (typically where `throw` occurs), ensuring debuggers show the actual throw location rather than this factory method.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/NetworkError.php#L126)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/NetworkError.php#L126)
 
 #### Parameters
 

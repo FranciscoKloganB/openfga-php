@@ -25,7 +25,7 @@ Immutable access token implementation for OpenFGA API authentication. This class
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Authentication/AccessToken.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Authentication/AccessToken.php)
 
 ## Implements
 
@@ -53,7 +53,7 @@ public function fromResponse(
 
 Create an access token instance from an OAuth server response. This factory method parses an HTTP response from an OAuth authorization server and extracts the access token information. The response should contain a JSON payload with the standard OAuth 2.0 token response fields including access_token, expires_in, and optionally scope. If the access token is a JWT and expectedIssuer/expectedAudience are provided, the JWT is validated to ensure the issuer and audience claims match the expected values from the OAuth client configuration.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Authentication/AccessTokenInterface.php#L68)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Authentication/AccessTokenInterface.php#L68)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ public function getExpires(): int
 
 Get the Unix timestamp when this access token expires. The expiration timestamp indicates when the token is no longer valid for API requests. Applications should check this value before making requests and refresh the token when necessary to avoid authentication failures.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Authentication/AccessToken.php#L116)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Authentication/AccessToken.php#L116)
 
 #### Returns
 
@@ -91,7 +91,7 @@ public function getScope(): ?string
 
 Get the scope that defines the permissions granted by this access token. The scope represents the extent of access granted to the token bearer. Different scopes may provide access to different OpenFGA operations or resources. A null scope typically indicates full access or that scope restrictions are not applicable for this token.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Authentication/AccessToken.php#L125)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Authentication/AccessToken.php#L125)
 
 #### Returns
 
@@ -106,7 +106,7 @@ public function getToken(): string
 
 Get the raw access token value. This method returns the actual token string that was issued by the authentication server. This is the same value returned by __toString() but provided as an explicit getter method for clarity.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Authentication/AccessToken.php#L134)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Authentication/AccessToken.php#L134)
 
 #### Returns
 
@@ -121,7 +121,7 @@ public function isExpired(): bool
 
 Check whether this access token has expired and needs to be refreshed. This method compares the token&#039;s expiration time against the current time to determine if the token is still valid. Expired tokens cannot be used for API requests as they result in authentication failures.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Authentication/AccessToken.php#L143)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Authentication/AccessToken.php#L143)
 
 #### Returns
 

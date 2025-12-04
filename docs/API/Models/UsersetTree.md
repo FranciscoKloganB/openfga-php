@@ -24,7 +24,7 @@ Represents the evaluation tree for determining user access. When OpenFGA evaluat
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTree.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTree.php)
 
 ## Implements
 
@@ -53,7 +53,7 @@ public function getRoot(): OpenFGA\Models\NodeInterface
 
 Get the root node of the userset tree structure. This returns the top-level node that represents the entry point for userset expansion. The tree structure allows for complex authorization logic including unions, intersections, and difference operations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTree.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTree.php#L53)
 
 #### Returns
 
@@ -66,7 +66,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTree.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTree.php#L62)
 
 #### Returns
 
@@ -83,7 +83,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

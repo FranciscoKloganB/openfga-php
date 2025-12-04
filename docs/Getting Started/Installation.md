@@ -14,7 +14,7 @@ Before installing the SDK, ensure your environment meets these requirements:
 Install the OpenFGA PHP SDK using [Composer](https://getcomposer.org/):
 
 ```bash
-composer require evansims/openfga-php
+composer require franciscokloganb/openfga-php
 ```
 
 This command installs the SDK and its core dependencies. However, the SDK relies on [PSR standards](https://www.php-fig.org/psr/) for HTTP communication, which you'll need to provide.
@@ -90,7 +90,7 @@ composer require guzzlehttp/guzzle
 **Solution:** Increase Composer's memory limit:
 
 ```bash
-COMPOSER_MEMORY_LIMIT=-1 composer require evansims/openfga-php
+COMPOSER_MEMORY_LIMIT=-1 composer require franciscokloganb/openfga-php
 ```
 
 ## Development Installation
@@ -98,7 +98,7 @@ COMPOSER_MEMORY_LIMIT=-1 composer require evansims/openfga-php
 For contributing to the SDK or running tests:
 
 ```bash
-git clone https://github.com/evansims/openfga-php.git
+git clone https://github.com/franciscokloganb/openfga-php.git
 cd openfga-php
 composer install
 composer test
@@ -197,5 +197,5 @@ composer diagnose
 4. **Enable verbose output:**
 
 ```bash
-composer require evansims/openfga-php -vvv
+composer require franciscokloganb/openfga-php -vvv
 ```

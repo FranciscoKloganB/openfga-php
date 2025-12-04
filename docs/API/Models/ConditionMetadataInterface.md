@@ -23,7 +23,7 @@ Defines metadata information for conditions in OpenFGA authorization models. Con
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getModule(): string
 
 Get the module name where the condition is defined. This provides organizational information about which module or namespace contains the condition definition, helping with debugging and understanding the model structure.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php#L31)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php#L31)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getSourceInfo(): SourceInfoInterface
 
 Get source file information for debugging and tooling. This provides information about the source file where the condition was originally defined, which is useful for development tools, debugging, and error reporting.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php#L42)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php#L48)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ConditionMetadataInterface.php#L48)
 
 #### Returns
 

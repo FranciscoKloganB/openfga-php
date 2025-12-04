@@ -24,7 +24,7 @@ Service for validating data against schemas. This service encapsulates validatio
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationService.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationService.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function hasSchema(string $className): bool
 
 Check if a schema is registered for a class.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationService.php#L41)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationService.php#L41)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ public function registerSchema(OpenFGA\Schemas\SchemaInterface $schema): self
 
 Register a schema for validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationService.php#L50)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationService.php#L50)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ public function validate(mixed $data, string $className): array<string, mixed>
 
 Validate data against a schema. Validates the provided data against the schema for the specified class. This method only validates structure and types, it does not construct objects.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationService.php#L66)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationService.php#L66)
 
 #### Parameters
 
@@ -109,7 +109,7 @@ public function validateProperty(mixed $value, OpenFGA\Schemas\SchemaPropertyInt
 
 Validate a property value against its schema definition.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationService.php#L134)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationService.php#L134)
 
 #### Parameters
 

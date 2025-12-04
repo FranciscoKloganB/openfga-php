@@ -31,36 +31,36 @@ class LlmsGenerator
     public function generate(): void
     {
         echo "Generating llms.txt for LLM consumption...\n";
-        
+
         $content = $this->buildLlmsFriendlyContent();
-        
+
         $result = file_put_contents($this->outputFile, $content);
         if ($result === false) {
             throw new RuntimeException("Failed to write llms.txt file");
         }
-        
+
         echo "Successfully generated llms.txt (" . number_format(strlen($content)) . " characters)\n";
     }
 
     private function buildLlmsFriendlyContent(): string
     {
         $content = [];
-        
+
         // Header and overview
         $content[] = $this->generateHeader();
-        
+
         // Project overview from main README
         $content[] = $this->generateProjectOverview();
-        
+
         // Written guides content
         $content[] = $this->generateGuidesSection();
-        
+
         // API Reference table of contents
         $content[] = $this->generateApiReferenceSection();
-        
+
         // Quick reference for common patterns
         $content[] = $this->generateQuickReference();
-        
+
         return implode("\n\n", array_filter($content));
     }
 
@@ -71,15 +71,15 @@ class LlmsGenerator
 
 This document contains comprehensive information about the OpenFGA PHP SDK for AI assistants and language models. It includes complete guides, API documentation references, and examples to help implement fine-grained authorization in PHP applications.
 
-**Repository:** https://github.com/evansims/openfga-php  
-**Documentation Wiki:** https://github.com/evansims/openfga-php/wiki  
-**OpenFGA Documentation:** https://openfga.dev/docs  
+**Repository:** https://github.com/franciscokloganb/openfga-php
+**Documentation Wiki:** https://github.com/franciscokloganb/openfga-php/wiki
+**OpenFGA Documentation:** https://openfga.dev/docs
 
 ## Key Information for AI Assistants
 
 - **Language:** PHP 8.3+
-- **Package Name:** `evansims/openfga-php`
-- **Installation:** `composer require evansims/openfga-php`
+- **Package Name:** `franciscokloganb/openfga-php`
+- **Installation:** `composer require franciscokloganb/openfga-php`
 - **Purpose:** Fine-grained authorization and relationship-based access control
 - **Architecture:** Result pattern for error handling, PSR-7/17/18 HTTP standards
 - **Testing:** `composer test` (unit, integration, contract tests)
@@ -98,7 +98,7 @@ MD;
     {
         $sections = [];
         $sections[] = "## Complete Guides and Documentation\n";
-        
+
         // Get all guide files from docs directory (exclude API subdirectory)
         $guideFiles = [
             'README.md' => 'SDK Overview and Quick Start',
@@ -134,7 +134,7 @@ MD;
         $sections = [];
         $sections[] = "## API Reference Documentation";
         $sections[] = "Complete API documentation is available in the GitHub wiki. Here's the organized structure with direct links:";
-        
+
         // Core classes
         $sections[] = "### Core Classes";
         $sections[] = $this->buildApiLinks([
@@ -302,7 +302,7 @@ MD;
             // Convert filename to wiki page name (remove .md extension and handle subdirectories)
             $wikiPageName = str_replace(['/', '.md'], ['-', ''], $basePath . $filename);
             // Add API- prefix for all API documentation pages
-            $wikiUrl = "https://github.com/evansims/openfga-php/wiki/API-{$wikiPageName}";
+            $wikiUrl = "https://github.com/franciscokloganb/openfga-php/wiki/API-{$wikiPageName}";
             $linkList[] = "- [{$description}]({$wikiUrl})";
         }
         return implode("\n", $linkList);
@@ -456,7 +456,7 @@ $client = new Client(
 
 ### Common Commands
 
-- **Install:** `composer require evansims/openfga-php`
+- **Install:** `composer require franciscokloganb/openfga-php`
 - **Run Tests:** `composer test`
 - **Generate API Docs:** `composer docs:api`
 - **Generate LLMs.txt:** `composer docs:llms`
@@ -488,7 +488,7 @@ MD;
 
     /**
      * Adjust markdown header levels to maintain proper hierarchy in unified document.
-     * 
+     *
      * @param string $content The markdown content to adjust
      * @param int $baseLevel The base level to start headers at (for example 3 means H1 becomes H4)
      * @return string Content with adjusted header levels
@@ -497,32 +497,32 @@ MD;
     {
         // Convert headers to maintain proper hierarchy
         // H1 (#) becomes H(baseLevel+1), H2 (##) becomes H(baseLevel+2), etc.
-        
+
         $lines = explode("\n", $content);
         $adjustedLines = [];
-        
+
         foreach ($lines as $line) {
             if (preg_match('/^(#{1,6})\s(.+)$/', $line, $matches)) {
                 $currentLevel = strlen($matches[1]);
                 $headerText = $matches[2];
-                
+
                 // Calculate new level: base level + current level
                 $newLevel = min($baseLevel + $currentLevel, 6); // Max H6
                 $newHeaderPrefix = str_repeat('#', $newLevel);
-                
+
                 $adjustedLines[] = "{$newHeaderPrefix} {$headerText}";
             } else {
                 // Convert internal documentation links to wiki links
                 $adjustedLines[] = $this->convertInternalLinksToWiki($line);
             }
         }
-        
+
         return implode("\n", $adjustedLines);
     }
-    
+
     /**
      * Convert internal documentation links to GitHub wiki links.
-     * 
+     *
      * @param string $line The line to process
      * @return string Line with converted links
      */
@@ -530,14 +530,14 @@ MD;
     {
         // Pattern to match markdown links pointing to .md files
         $pattern = '/\[([^\]]+)\]\(([^)]+\.md)(?:#[^)]+)?\)/';
-        
+
         return preg_replace_callback($pattern, function($matches) {
             $linkText = $matches[1];
             $linkPath = $matches[2];
-            
+
             // Extract just the filename without path and .md extension
             $filename = basename($linkPath, '.md');
-            
+
             // Special handling for different documentation sections
             if (strpos($linkPath, '../') !== false || strpos($linkPath, 'Getting Started/') !== false) {
                 // Handle relative paths and Getting Started section
@@ -552,8 +552,8 @@ MD;
                 // Default handling
                 $wikiPageName = $filename;
             }
-            
-            $wikiUrl = "https://github.com/evansims/openfga-php/wiki/{$wikiPageName}";
+
+            $wikiUrl = "https://github.com/franciscokloganb/openfga-php/wiki/{$wikiPageName}";
             return "[{$linkText}]({$wikiUrl})";
         }, $line);
     }
@@ -562,7 +562,7 @@ MD;
 // CLI execution
 if (php_sapi_name() === 'cli' && isset($argv[0]) && realpath($argv[0]) === __FILE__) {
     $projectRoot = dirname(__DIR__);
-    
+
     try {
         $generator = new LlmsGenerator($projectRoot);
         $generator->generate();

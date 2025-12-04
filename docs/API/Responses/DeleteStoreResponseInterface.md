@@ -18,7 +18,7 @@ Interface for store deletion response objects. This interface defines the contra
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/DeleteStoreResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/DeleteStoreResponseInterface.php)
 
 ## Implements
 

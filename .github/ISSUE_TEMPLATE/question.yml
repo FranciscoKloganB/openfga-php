@@ -6,8 +6,8 @@ body:
     attributes:
       value: |
         👋 Got a question? You're in the right place!
-        
-        **Quick tip:** For general discussions, consider using [GitHub Discussions](https://github.com/evansims/openfga-php/discussions) instead!
+
+        **Quick tip:** For general discussions, consider using [GitHub Discussions](https://github.com/franciscokloganb/openfga-php/discussions) instead!
 
   - type: textarea
     id: your-question

@@ -24,7 +24,7 @@ Serialization error types for the OpenFGA SDK. Defines specific serialization an
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/SerializationError.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/SerializationError.php)
 
 ## Implements
 
@@ -69,7 +69,7 @@ public function exception(
 
 Create a new SerializationException for this error type. Factory method that creates a SerializationException instance with the current error type and provided context information. This provides a convenient way to generate typed exceptions with proper error categorization and rich debugging context for OpenFGA serialization failures. The exception will automatically capture the correct file and line location where this method was called (typically where `throw` occurs), ensuring debuggers show the actual throw location rather than this factory method.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/SerializationError.php#L66)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/SerializationError.php#L66)
 
 #### Parameters
 
@@ -93,7 +93,7 @@ public function isCollectionError(): bool
 
 Check if this serialization error is related to collection operations. Useful for identifying errors that occur during collection manipulation and providing appropriate error handling strategies.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/SerializationError.php#L86)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/SerializationError.php#L86)
 
 #### Returns
 
@@ -108,7 +108,7 @@ public function isTypeValidationError(): bool
 
 Check if this serialization error indicates a data type validation failure. Useful for distinguishing between validation errors and structural errors during serialization processes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/SerializationError.php#L106)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/SerializationError.php#L106)
 
 #### Returns
 

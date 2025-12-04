@@ -21,7 +21,7 @@ Handles batch processing of write tuple requests. This class encapsulates the lo
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/BatchRequestProcessor.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/BatchRequestProcessor.php)
 
 ## Methods
 
@@ -34,7 +34,7 @@ public function getLastRequest(): ?Psr\Http\Message\RequestInterface
 
 Get the last HTTP request made.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/BatchRequestProcessor.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/BatchRequestProcessor.php#L42)
 
 #### Returns
 
@@ -49,7 +49,7 @@ public function getLastResponse(): ?Psr\Http\Message\ResponseInterface
 
 Get the last HTTP response received.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/BatchRequestProcessor.php#L50)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/BatchRequestProcessor.php#L50)
 
 #### Returns
 
@@ -64,7 +64,7 @@ public function process(WriteTuplesRequest $request): SuccessInterface
 
 Process a write tuples request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/BatchRequestProcessor.php#L64)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/BatchRequestProcessor.php#L64)
 
 #### Parameters
 

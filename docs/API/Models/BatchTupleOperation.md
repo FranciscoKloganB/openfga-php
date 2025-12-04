@@ -29,7 +29,7 @@ Represents a batch tuple operation containing both writes and deletes. This mode
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php)
 
 ## Implements
 
@@ -59,7 +59,7 @@ public function chunk(int $chunkSize = 100): array
 
 Split this operation into smaller chunks that respect API limits. If the operation doesn&#039;t require chunking, returns an array containing only this operation. Otherwise, splits the writes and deletes across multiple operations to stay within the specified chunk size.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L71)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L71)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ public function getDeletes(): ?OpenFGA\Models\Collections\TupleKeysInterface
 
 Get the tuples to delete in this operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L132)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L132)
 
 #### Returns
 
@@ -95,7 +95,7 @@ public function getTotalOperations(): int
 
 Get the total number of operations (writes + deletes).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L141)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L141)
 
 #### Returns
 
@@ -110,7 +110,7 @@ public function getWrites(): ?OpenFGA\Models\Collections\TupleKeysInterface
 
 Get the tuples to write in this operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L153)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L153)
 
 #### Returns
 
@@ -125,7 +125,7 @@ public function isEmpty(): bool
 
 Check if this operation is empty (no writes or deletes).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L162)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L162)
 
 #### Returns
 
@@ -138,7 +138,7 @@ public function jsonSerialize(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L173)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L173)
 
 #### Returns
 
@@ -153,7 +153,7 @@ public function requiresChunking(int $chunkSize = 100): bool
 
 Check if this operation requires chunking due to size limits.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L185)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperation.php#L185)
 
 #### Parameters
 
@@ -176,7 +176,7 @@ public function schema(): SchemaInterface
 
 Get the JSON schema for this model.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L25)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L25)
 
 #### Returns
 

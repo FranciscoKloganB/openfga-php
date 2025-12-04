@@ -26,7 +26,7 @@ Contains metadata information about a relation in your authorization model. Rela
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/RelationMetadata.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/RelationMetadata.php)
 
 ## Implements
 
@@ -55,7 +55,7 @@ public function getDirectlyRelatedUserTypes(): ?OpenFGA\Models\Collections\Relat
 
 Get the user types that can be directly related through this relation. This defines which types of users can have this relation to objects, providing type safety and helping with authorization model validation. For example, a &quot;member&quot; relation might allow &quot;user&quot; and &quot;group&quot; types.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/RelationMetadata.php#L60)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/RelationMetadata.php#L60)
 
 #### Returns
 
@@ -70,7 +70,7 @@ public function getModule(): ?string
 
 Get the optional module name for organization. This provides organizational information about which module or namespace contains the relation definition, helping with model organization and debugging.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/RelationMetadata.php#L69)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/RelationMetadata.php#L69)
 
 #### Returns
 
@@ -85,7 +85,7 @@ public function getSourceInfo(): ?OpenFGA\Models\SourceInfoInterface
 
 Get optional source file information for debugging and tooling. This provides information about the source file where the relation was originally defined, which is useful for development tools, debugging, and error reporting.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/RelationMetadata.php#L78)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/RelationMetadata.php#L78)
 
 #### Returns
 
@@ -98,7 +98,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/RelationMetadata.php#L87)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/RelationMetadata.php#L87)
 
 #### Returns
 
@@ -115,7 +115,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

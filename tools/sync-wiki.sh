@@ -348,7 +348,7 @@ cat > "_Sidebar.md" << 'EOF'
 
 ---
 
-*[View on GitHub Pages](https://evansims.github.io/openfga-php/) • [Source Code](https://github.com/evansims/openfga-php)*
+*[View on GitHub Pages](https://franciscokloganb.github.io/openfga-php/) • [Source Code](https://github.com/franciscokloganb/openfga-php)*
 EOF
 
 # Create custom footer
@@ -372,10 +372,10 @@ cat > "_Footer.md" << 'EOF'
 
 ## Support & Community
 
-- **[Report Issues](https://github.com/evansims/openfga-php/issues)** - Bug reports and feature requests
-- **[Discussions](https://github.com/evansims/openfga-php/discussions)** - Community support and questions
-- **[Contributing](https://github.com/evansims/openfga-php/blob/main/.github/CONTRIBUTING.md)** - Help improve the SDK
-- **[Changelog](https://github.com/evansims/openfga-php/blob/main/CHANGELOG.md)** - Latest updates and releases
+- **[Report Issues](https://github.com/franciscokloganb/openfga-php/issues)** - Bug reports and feature requests
+- **[Discussions](https://github.com/franciscokloganb/openfga-php/discussions)** - Community support and questions
+- **[Contributing](https://github.com/franciscokloganb/openfga-php/blob/main/.github/CONTRIBUTING.md)** - Help improve the SDK
+- **[Changelog](https://github.com/franciscokloganb/openfga-php/blob/main/CHANGELOG.md)** - Latest updates and releases
 
 ## OpenFGA Ecosystem
 
@@ -386,7 +386,7 @@ cat > "_Footer.md" << 'EOF'
 
 ---
 
-*OpenFGA PHP SDK • [Apache 2.0 License](https://github.com/evansims/openfga-php/blob/main/LICENSE)*
+*OpenFGA PHP SDK • [Apache 2.0 License](https://github.com/franciscokloganb/openfga-php/blob/main/LICENSE)*
 EOF
 
 # Convert directory structure to wiki-friendly format
@@ -532,7 +532,7 @@ rmdir API 2>/dev/null || true
 cd ..
 
 # Check if wiki repository exists
-WIKI_URL="https://github.com/evansims/openfga-php.wiki.git"
+WIKI_URL="https://github.com/franciscokloganb/openfga-php.wiki.git"
 if [ -d "wiki-repo" ]; then
     echo "📁 Using existing wiki repository..."
     cd wiki-repo
@@ -547,7 +547,7 @@ else
         echo "❌ Failed to clone wiki repository."
         echo "This might mean:"
         echo "1. The wiki doesn't exist yet - create at least one page first:"
-        echo "   https://github.com/evansims/openfga-php/wiki"
+        echo "   https://github.com/franciscokloganb/openfga-php/wiki"
         echo "2. You need to authenticate with GitHub (run 'gh auth login')"
         echo "3. You don't have access to this repository"
         exit 1
@@ -605,7 +605,7 @@ git commit -m "Sync documentation from main branch
 echo "🚀 Pushing to Wiki..."
 git push --force origin master 2>/dev/null || git push --force origin main 2>/dev/null || git push --force -u origin master
 echo "✅ Wiki updated successfully!"
-echo "🌐 View at: https://github.com/evansims/openfga-php/wiki"
+echo "🌐 View at: https://github.com/franciscokloganb/openfga-php/wiki"
 
 # Cleanup
 cd ..

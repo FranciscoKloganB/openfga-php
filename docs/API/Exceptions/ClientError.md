@@ -22,7 +22,7 @@ General client error types for the OpenFGA SDK. Defines high-level error categor
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientError.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientError.php)
 
 ## Implements
 
@@ -65,7 +65,7 @@ public function exception(
 
 Create a new ClientException for this error type. Factory method that creates a ClientException instance with the current error type and provided context information. This provides a convenient way to generate typed exceptions with proper error categorization and rich debugging context for OpenFGA API failures. The exception will automatically capture the correct file and line location where this method was called (typically where `throw` occurs), ensuring debuggers show the actual throw location rather than this factory method.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientError.php#L98)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientError.php#L98)
 
 #### Parameters
 

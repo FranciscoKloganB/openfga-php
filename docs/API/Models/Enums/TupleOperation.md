@@ -25,7 +25,7 @@ Operations that can be performed on relationship tuples in OpenFGA. This enum de
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TupleOperation.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TupleOperation.php)
 
 ## Implements
 
@@ -57,7 +57,7 @@ public function getDescription(): string
 
 Get a user-friendly description of what this operation does. Provides a clear explanation of the operation&#039;s effect on authorization data, useful for logging, auditing, and user interfaces.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L84)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L84)
 
 #### Returns
 
@@ -72,7 +72,7 @@ public function grantsPermissions(): bool
 
 Check if this operation adds permissions to the authorization store. Useful for understanding whether an operation will grant new access or capabilities to users within the system.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L100)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L100)
 
 #### Returns
 
@@ -87,7 +87,7 @@ public function isIdempotent(): true
 
 Check if this operation is safe to retry in case of failures. Idempotent operations can be safely retried without causing unintended side effects, making them suitable for retry logic and distributed systems.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L116)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L116)
 
 #### Returns
 
@@ -102,7 +102,7 @@ public function revokesPermissions(): bool
 
 Check if this operation removes permissions from the authorization store. Useful for understanding whether an operation will revoke existing access or capabilities from users within the system.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L129)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TupleOperation.php#L129)
 
 #### Returns
 

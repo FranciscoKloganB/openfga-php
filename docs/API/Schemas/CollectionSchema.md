@@ -26,7 +26,7 @@ Schema definition specifically for validating and transforming collection data s
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php)
 
 ## Implements
 
@@ -49,7 +49,7 @@ public function getClassName(): string
 
 Get the fully qualified class name this schema defines. This method returns the class name that this schema describes, which is used during validation and object instantiation to ensure the correct model class is created.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L56)
 
 #### Returns
 
@@ -64,7 +64,7 @@ public function getItemType(): string
 
 Get the type of each item in the collection.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L65)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L65)
 
 #### Returns
 
@@ -79,7 +79,7 @@ public function getProperties(): array
 
 Get all properties defined in this schema. This method returns a comprehensive collection of all properties that make up this schema, including their validation rules, types, and default values. Each property defines how a specific field should be validated and processed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L74)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L74)
 
 #### Returns
 
@@ -94,7 +94,7 @@ public function getProperty(string $name): ?OpenFGA\Schemas\SchemaProperty
 
 Get a specific property definition by name. This method retrieves the schema definition for a particular property, allowing you to access its validation rules, type information, and other metadata for individual fields.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L84)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L84)
 
 #### Parameters
 
@@ -115,7 +115,7 @@ public function getWrapperKey(): ?string
 
 Get the wrapper key for the collection data if any. Some collections expect data wrapped in a specific key (for example, Usersets uses &#039;child&#039;).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L94)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L94)
 
 #### Returns
 
@@ -130,7 +130,7 @@ public function requiresItems(): bool
 
 Whether the collection requires at least one item.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L103)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/CollectionSchema.php#L103)
 
 #### Returns
 

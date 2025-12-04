@@ -956,7 +956,7 @@ class DocumentationGenerator
     {
         // Convert absolute path to relative path from project root
         $relativePath = $this->getRelativePathFromProjectRoot($filePath);
-        return "https://github.com/evansims/openfga-php/blob/main/{$relativePath}";
+        return "https://github.com/franciscokloganb/openfga-php/blob/main/{$relativePath}";
     }
 
     /**
@@ -972,7 +972,7 @@ class DocumentationGenerator
         $relativePath = $this->getRelativePathFromProjectRoot($filePath);
         $lineNumber = $method->getStartLine();
 
-        return "https://github.com/evansims/openfga-php/blob/main/{$relativePath}#L{$lineNumber}";
+        return "https://github.com/franciscokloganb/openfga-php/blob/main/{$relativePath}#L{$lineNumber}";
     }
 
     /**
@@ -1459,11 +1459,11 @@ class DocumentationGenerator
                     foreach ($columnWidths as $colIndex => $width) {
                         $cellContent = $row[$colIndex] ?? '';
                         $actualDisplayWidth = $this->calculateDisplayWidth($cellContent);
-                        
+
                         // Calculate padding: target visual width minus actual visual width
                         // Since spaces are always single-width, we can directly use this difference
                         $padding = $width - $actualDisplayWidth;
-                        
+
                         $formattedCells[] = $cellContent . str_repeat(' ', max(0, $padding));
                     }
                     $formattedRows[] = '| ' . implode(' | ', $formattedCells) . ' |';
@@ -1513,7 +1513,7 @@ class DocumentationGenerator
      * Calculate the visual display width of text accounting for East Asian characters.
      *
      * This method calculates the actual visual width as it would appear in a monospace
-     * font, where East Asian fullwidth characters (CJK) take 2 columns and other 
+     * font, where East Asian fullwidth characters (CJK) take 2 columns and other
      * characters take 1 column. This is needed for proper table alignment in contexts
      * where visual alignment matters.
      *
@@ -1526,14 +1526,14 @@ class DocumentationGenerator
         if (!mb_check_encoding($text, 'UTF-8')) {
             $text = mb_convert_encoding($text, 'UTF-8');
         }
-        
+
         $width = 0;
         $length = mb_strlen($text, 'UTF-8');
-        
+
         for ($i = 0; $i < $length; $i++) {
             $char = mb_substr($text, $i, 1, 'UTF-8');
             $codepoint = mb_ord($char, 'UTF-8');
-            
+
             // Check if character is fullwidth (East Asian)
             if ($this->isFullwidthCharacter($codepoint)) {
                 $width += 2;
@@ -1541,7 +1541,7 @@ class DocumentationGenerator
                 $width += 1;
             }
         }
-        
+
         return $width;
     }
 
@@ -1560,7 +1560,7 @@ class DocumentationGenerator
         if (!mb_check_encoding($text, 'UTF-8')) {
             $text = mb_convert_encoding($text, 'UTF-8');
         }
-        
+
         return mb_strlen($text, 'UTF-8');
     }
 
@@ -1778,7 +1778,7 @@ class DocumentationGenerator
     private function getLocaleDisplayName(string $locale): string
     {
         $language = Language::fromLocale($locale);
-        
+
         return $language !== null ? $language->displayName() : $locale;
     }
 

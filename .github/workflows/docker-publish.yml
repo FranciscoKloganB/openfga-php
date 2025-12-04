@@ -19,7 +19,7 @@ concurrency:
 env:
   # Docker Hub
   DOCKERHUB_REGISTRY: docker.io
-  DOCKERHUB_IMAGE: evansims/openfga-php-integration-tests
+  DOCKERHUB_IMAGE: franciscokloganb/openfga-php-integration-tests
   # GitHub Container Registry
   GHCR_REGISTRY: ghcr.io
   GHCR_IMAGE: ${{ github.repository }}-integration-tests

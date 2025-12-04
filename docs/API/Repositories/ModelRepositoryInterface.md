@@ -21,7 +21,7 @@ Repository contract for authorization model operations. This interface defines t
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php)
 
 ## Methods
 
@@ -38,7 +38,7 @@ public function create(
 
 Create a new authorization model in the store. Creates an immutable authorization model that defines your application&#039;s permission structure. The model includes type definitions for objects and the relationships between them, and optionally conditions for dynamic permissions.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php#L40)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ public function get(string $modelId): FailureInterface|SuccessInterface
 
 Get a specific authorization model by ID. Retrieves the complete authorization model including all type definitions, relationships, and conditions. Models are immutable, so the returned model will never change once created.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php#L58)
 
 #### Parameters
 
@@ -85,7 +85,7 @@ public function list(
 
 List authorization models in the store. Returns a paginated list of authorization models, ordered by creation time (newest first). Use pagination parameters to retrieve large lists efficiently.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php#L72)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/ModelRepositoryInterface.php#L72)
 
 #### Parameters
 

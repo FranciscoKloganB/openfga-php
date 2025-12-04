@@ -27,7 +27,7 @@ Defines the contract for userset specifications in authorization models. A users
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php)
 
 ## Implements
 
@@ -49,7 +49,7 @@ public function getComputedUserset(): ObjectRelationInterface|null
 
 Get the computed userset specification for this userset. A computed userset defines relationships that are derived from other relationships, allowing for indirect authorization patterns. When present, this specifies an object-relation pair that should be computed to determine the actual users.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L32)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L32)
 
 #### Returns
 
@@ -64,7 +64,7 @@ public function getDifference(): DifferenceV1Interface|null
 
 Get the difference operation specification for this userset. A difference operation represents a set subtraction where users are granted access based on one userset but explicitly excluded if they&#039;re in another. This enables sophisticated access control patterns like &quot;all managers except those on leave.&quot;
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L43)
 
 #### Returns
 
@@ -79,7 +79,7 @@ public function getDirect(): object|null
 
 Get the direct userset value for this userset. A direct userset represents an immediate, explicit relationship without complex computation. This is typically used for simple membership patterns where users are directly assigned to a role or permission.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L54)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L54)
 
 #### Returns
 
@@ -94,7 +94,7 @@ public function getIntersection(): UsersetsInterface|null
 
 Get the intersection operation specification for this userset. An intersection operation represents users who must satisfy ALL of the specified usersets. This creates a logical AND operation where users are granted access only if they&#039;re in every userset within the intersection.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L65)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L65)
 
 #### Returns
 
@@ -109,7 +109,7 @@ public function getTupleToUserset(): TupleToUsersetV1Interface|null
 
 Get the tuple-to-userset operation specification for this userset. A tuple-to-userset operation computes users by examining existing relationships and following them to other usersets. This enables complex authorization patterns where permissions are inherited through relationship chains.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L76)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L76)
 
 #### Returns
 
@@ -124,7 +124,7 @@ public function getUnion(): UsersetsInterface|null
 
 Get the union operation specification for this userset. A union operation represents users who satisfy ANY of the specified usersets. This creates a logical OR operation where users are granted access if they&#039;re in at least one userset within the union.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L87)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L87)
 
 #### Returns
 
@@ -137,7 +137,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetInterface.php#L100)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetInterface.php#L100)
 
 #### Returns
 

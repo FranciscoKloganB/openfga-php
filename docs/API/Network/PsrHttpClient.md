@@ -20,7 +20,7 @@ PSR-18 compliant HTTP client implementation. This implementation wraps any PSR-1
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/PsrHttpClient.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/PsrHttpClient.php)
 
 ## Implements
 
@@ -37,7 +37,7 @@ public function send(Psr\Http\Message\RequestInterface $request): Psr\Http\Messa
 
 Send an HTTP request and return the response.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/PsrHttpClient.php#L44)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/PsrHttpClient.php#L44)
 
 #### Parameters
 

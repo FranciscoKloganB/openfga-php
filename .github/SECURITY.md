@@ -11,7 +11,7 @@ The OpenFGA PHP team takes security issues seriously. We appreciate your efforts
 If you believe you've found a security vulnerability in the OpenFGA PHP SDK, please follow these steps:
 
 1. **Do not disclose the vulnerability publicly**
-2. **Use GitHub's private vulnerability reporting feature** at [https://github.com/evansims/openfga-php/security/advisories/new](https://github.com/evansims/openfga-php/security/advisories/new)
+2. **Use GitHub's private vulnerability reporting feature** at [https://github.com/franciscokloganb/openfga-php/security/advisories/new](https://github.com/franciscokloganb/openfga-php/security/advisories/new)
 3. **Include details** such as:
    - A description of the vulnerability
    - Steps to reproduce with minimal code examples

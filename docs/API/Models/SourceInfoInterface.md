@@ -22,7 +22,7 @@ Represents source file information for OpenFGA model elements. Source informatio
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/SourceInfoInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/SourceInfoInterface.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getFile(): string
 
 Get the source file path where the model element was defined. This provides debugging and tooling information about the original source file location for the model element. This is particularly useful for development tools, error reporting, and tracing model definitions back to their source.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/SourceInfoInterface.php#L39)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/SourceInfoInterface.php#L39)
 
 #### Returns
 
@@ -57,7 +57,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/SourceInfoInterface.php#L45)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/SourceInfoInterface.php#L45)
 
 #### Returns
 

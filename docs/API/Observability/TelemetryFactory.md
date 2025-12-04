@@ -16,4 +16,4 @@ Factory for creating telemetry providers with OpenTelemetry integration. This fa
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Observability/TelemetryFactory.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Observability/TelemetryFactory.php)

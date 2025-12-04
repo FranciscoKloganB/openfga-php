@@ -40,7 +40,7 @@ OpenFGA Client Interface for relationship-based access control operations. This 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php)
 
 ## Related Classes
 
@@ -95,7 +95,7 @@ if ($result->success()) {
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L86)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L86)
 
 #### Parameters
 
@@ -160,7 +160,7 @@ $result = $client->check(
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L135)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L135)
 
 #### Parameters
 
@@ -222,7 +222,7 @@ if ($result->success()) {
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L187)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L187)
 
 #### Parameters
 
@@ -246,7 +246,7 @@ public function createStore(string $name): FailureInterface|SuccessInterface
 
 Creates a new store with the given name. Stores provide data isolation for different applications or environments. Each store maintains its own authorization models, relationship tuples, and provides complete separation from other stores.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L206)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L206)
 
 #### Parameters
 
@@ -267,7 +267,7 @@ public function deleteStore(StoreInterface|string $store): FailureInterface|Succ
 
 Deletes a store.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L216)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L216)
 
 #### Parameters
 
@@ -317,7 +317,7 @@ if ($result->success()) {
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L260)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L260)
 
 #### Parameters
 
@@ -344,7 +344,7 @@ public function expand(
 
 Expands a relationship tuple to show all users that have the relationship.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L272)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L272)
 
 #### Parameters
 
@@ -372,7 +372,7 @@ public function getAuthorizationModel(
 
 Retrieves an authorization model by ID.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L287)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L287)
 
 #### Parameters
 
@@ -394,7 +394,7 @@ public function getLastRequest(): ?Psr\Http\Message\RequestInterface
 
 Retrieves the last HTTP request made by the client.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L297)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L297)
 
 #### Returns
 
@@ -409,7 +409,7 @@ public function getLastResponse(): ?Psr\Http\Message\ResponseInterface
 
 Retrieves the last HTTP response received by the client.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L304)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L304)
 
 #### Returns
 
@@ -424,7 +424,7 @@ public function getStore(StoreInterface|string $store): FailureInterface|Success
 
 Retrieves store details by ID.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L312)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L312)
 
 #### Parameters
 
@@ -449,7 +449,7 @@ public function listAuthorizationModels(
 
 Lists authorization models in a store with pagination.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L327)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L327)
 
 #### Parameters
 
@@ -522,7 +522,7 @@ $result = $client->listObjects(
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L377)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L377)
 
 #### Parameters
 
@@ -553,7 +553,7 @@ public function listStores(
 
 Lists all stores with pagination.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L398)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L398)
 
 #### Parameters
 
@@ -581,7 +581,7 @@ public function listTupleChanges(
 
 Lists changes to relationship tuples in a store.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L416)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L416)
 
 #### Parameters
 
@@ -659,7 +659,7 @@ $result = $client->listUsers(
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L471)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L471)
 
 #### Parameters
 
@@ -690,7 +690,7 @@ public function readAssertions(
 
 Retrieves assertions for an authorization model.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L489)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L489)
 
 #### Parameters
 
@@ -718,7 +718,7 @@ public function readTuples(
 
 Reads relationship tuples from a store with optional filtering and pagination.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L507)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L507)
 
 #### Parameters
 
@@ -752,7 +752,7 @@ public function streamedListObjects(
 
 Streams objects that a user has a specific relationship with. Returns all objects of a given type that the specified user has a relationship with, using a streaming response for memory-efficient processing of large result sets. This is ideal for handling thousands of objects without loading them all into memory.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L532)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L532)
 
 #### Parameters
 
@@ -784,7 +784,7 @@ public function writeAssertions(
 
 Creates or updates assertions for an authorization model.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L551)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L551)
 
 #### Parameters
 
@@ -892,7 +892,7 @@ $client->writeTuples(
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/ClientInterface.php#L636)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/ClientInterface.php#L636)
 
 #### Parameters
 

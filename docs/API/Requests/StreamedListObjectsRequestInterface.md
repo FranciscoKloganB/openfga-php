@@ -29,7 +29,7 @@ Request interface for streaming objects that a user has a specific relationship 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php)
 
 ## Implements
 
@@ -51,7 +51,7 @@ public function getConsistency(): Consistency|null
 
 Get the consistency requirement for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L27)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L27)
 
 #### Returns
 
@@ -66,7 +66,7 @@ public function getContext(): object|null
 
 Get the context object for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L34)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L34)
 
 #### Returns
 
@@ -81,7 +81,7 @@ public function getContextualTuples(): TupleKeysInterface|null
 
 Get the contextual tuples for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L41)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L41)
 
 #### Returns
 
@@ -96,7 +96,7 @@ public function getModel(): string|null
 
 Get the authorization model ID for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L48)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L48)
 
 #### Returns
 
@@ -111,7 +111,7 @@ public function getRelation(): string
 
 Get the relation name for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L55)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L55)
 
 #### Returns
 
@@ -126,7 +126,7 @@ public function getRequest(StreamFactoryInterface $streamFactory): RequestContex
 
 Build a request context for HTTP execution. Transforms the request object into a standardized HTTP request context that can be executed by the OpenFGA HTTP client. This method handles all aspects of request preparation including parameter serialization, URL construction, header configuration, and body stream creation. The method validates that all required parameters are present and properly formatted, serializes complex objects to JSON, constructs the appropriate API endpoint URL, and creates the necessary HTTP message body streams.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
 
 #### Parameters
 
@@ -147,7 +147,7 @@ public function getStore(): string
 
 Get the store ID for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L62)
 
 #### Returns
 
@@ -162,7 +162,7 @@ public function getType(): string
 
 Get the object type for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L69)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L69)
 
 #### Returns
 
@@ -177,7 +177,7 @@ public function getUser(): string
 
 Get the user identifier for this request.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L76)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/StreamedListObjectsRequestInterface.php#L76)
 
 #### Returns
 

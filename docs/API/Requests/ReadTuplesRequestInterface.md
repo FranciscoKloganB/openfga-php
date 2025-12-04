@@ -26,7 +26,7 @@ Interface for reading relationship tuples from an OpenFGA store. This interface 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php)
 
 ## Implements
 
@@ -48,7 +48,7 @@ public function getConsistency(): Consistency|null
 
 Get the read consistency level for the read operation. Determines the consistency guarantees for reading relationship tuples. This allows you to balance between read performance and data freshness based on your application&#039;s requirements.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L43)
 
 #### Returns
 
@@ -63,7 +63,7 @@ public function getContinuationToken(): string|null
 
 Get the continuation token for paginated results. Returns the pagination token from a previous read operation to continue retrieving results from where the last request left off. This enables efficient pagination through large result sets without missing or duplicating tuples.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L55)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L55)
 
 #### Returns
 
@@ -78,7 +78,7 @@ public function getPageSize(): int|null
 
 Get the maximum number of tuples to return. Specifies the page size for paginated results. This controls how many relationship tuples are returned in a single response. Smaller page sizes reduce memory usage and latency, while larger page sizes reduce the number of API calls needed for large datasets.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L67)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L67)
 
 #### Returns
 
@@ -93,7 +93,7 @@ public function getRequest(StreamFactoryInterface $streamFactory): RequestContex
 
 Build a request context for HTTP execution. Transforms the request object into a standardized HTTP request context that can be executed by the OpenFGA HTTP client. This method handles all aspects of request preparation including parameter serialization, URL construction, header configuration, and body stream creation. The method validates that all required parameters are present and properly formatted, serializes complex objects to JSON, constructs the appropriate API endpoint URL, and creates the necessary HTTP message body streams.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
 
 #### Parameters
 
@@ -114,7 +114,7 @@ public function getStore(): string
 
 Get the store ID containing the tuples to read. Identifies which OpenFGA store contains the relationship tuples to query. All read operations will be performed within the context of this specific store, ensuring data isolation from other stores.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L78)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L78)
 
 #### Returns
 
@@ -129,7 +129,7 @@ public function getTupleKey(): TupleKeyInterface
 
 Get the tuple key pattern for filtering results. Specifies the relationship pattern to match when reading tuples. This can include specific values for object, user, and relation, or use partial patterns with wildcards to match multiple tuples. Empty or null values in the tuple key act as wildcards.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L90)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadTuplesRequestInterface.php#L90)
 
 #### Returns
 

@@ -25,7 +25,7 @@ Represents a filter for limiting users by type and optional relation. UserTypeFi
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/UserTypeFilter.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UserTypeFilter.php)
 
 ## Implements
 
@@ -54,7 +54,7 @@ public function getRelation(): ?string
 
 Get the optional relation filter for limiting user types. When specified, this filter limits the results to users that have the specified relation to objects of the target type. This allows for more specific filtering beyond just the object type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UserTypeFilter.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UserTypeFilter.php#L56)
 
 #### Returns
 
@@ -69,7 +69,7 @@ public function getType(): string
 
 Get the object type to filter by. This specifies the type of objects that users should be related to when filtering results. Only users connected to objects of this type will be included in the filtered results.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UserTypeFilter.php#L65)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UserTypeFilter.php#L65)
 
 #### Returns
 
@@ -82,7 +82,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UserTypeFilter.php#L74)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UserTypeFilter.php#L74)
 
 #### Returns
 
@@ -99,7 +99,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

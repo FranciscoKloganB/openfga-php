@@ -17,7 +17,7 @@ OpenFGA DSL Transformer Interface for authorization model conversions. This inte
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/TransformerInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/TransformerInterface.php)
 
 ## Related Classes
 

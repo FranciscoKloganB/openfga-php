@@ -21,7 +21,7 @@ Interface for user listing response objects. This interface defines the contract
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListUsersResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListUsersResponseInterface.php)
 
 ## Implements
 
@@ -43,7 +43,7 @@ public function getUsers(): UsersInterface
 
 Get the collection of users with the specified relationship. Returns a type-safe collection containing the user objects that have the queried relationship with the specified object. Each user represents an entity that has been granted the specified permission or relationship.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListUsersResponseInterface.php#L46)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListUsersResponseInterface.php#L46)
 
 #### Returns
 

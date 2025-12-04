@@ -26,7 +26,7 @@ OpenFGA authorization model schema versions. This enum defines the supported sch
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php)
 
 ## Implements
 
@@ -58,7 +58,7 @@ public function compareTo(SchemaVersion $other): int
 
 Compare this schema version with another version. Returns negative, zero, or positive value if this version is respectively less than, equal to, or greater than the compared version.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L81)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L81)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ public function getNumericVersion(): float
 
 Get the numeric version as a float for comparison operations. Useful for version comparison logic and feature detection.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L93)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L93)
 
 #### Returns
 
@@ -94,7 +94,7 @@ public function isLatest(): bool
 
 Check if this is the latest schema version. Useful for determining if an authorization model is using the most current feature set and capabilities.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L106)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L106)
 
 #### Returns
 
@@ -109,7 +109,7 @@ public function isLegacy(): bool
 
 Check if this is a legacy schema version. Legacy versions are still supported but may lack features available in newer versions. Consider upgrading for better functionality.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L119)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L119)
 
 #### Returns
 
@@ -124,7 +124,7 @@ public function supportsConditions(): bool
 
 Check if this schema version supports conditional relationships. Conditional relationships allow runtime parameter evaluation to determine relationship validity, enabling context-aware authorization decisions.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L135)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/SchemaVersion.php#L135)
 
 #### Returns
 

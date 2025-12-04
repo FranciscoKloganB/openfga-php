@@ -24,7 +24,7 @@ Interface for store creation response objects. This interface defines the contra
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php)
 
 ## Implements
 
@@ -46,7 +46,7 @@ public function getCreatedAt(): DateTimeImmutable
 
 Get the timestamp when the store was created. Returns the exact moment when the store was successfully created in the OpenFGA system. This timestamp is immutable and set by the server upon store creation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L42)
 
 #### Returns
 
@@ -61,7 +61,7 @@ public function getId(): string
 
 Get the unique identifier of the created store. Returns the system-generated unique identifier for the newly created store. This ID is used in all subsequent API operations to reference this specific store.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L52)
 
 #### Returns
 
@@ -76,7 +76,7 @@ public function getName(): string
 
 Get the human-readable name of the created store. Returns the descriptive name that was assigned to the store during creation. This name is used for identification and administrative purposes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L62)
 
 #### Returns
 
@@ -91,7 +91,7 @@ public function getUpdatedAt(): DateTimeImmutable
 
 Get the timestamp when the store was last updated. Returns the timestamp of the most recent modification to the store&#039;s metadata. For newly created stores, this will typically match the creation timestamp.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L72)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CreateStoreResponseInterface.php#L72)
 
 #### Returns
 

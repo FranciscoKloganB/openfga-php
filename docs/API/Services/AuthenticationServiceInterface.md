@@ -21,7 +21,7 @@ Service interface for managing authentication in OpenFGA operations. This servic
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Services/AuthenticationServiceInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/AuthenticationServiceInterface.php)
 
 ## Related Classes
 
@@ -41,7 +41,7 @@ public function getAuthorizationHeader(
 
 Get the authorization header for API requests. Retrieves the current authorization header, automatically handling token refresh if the current token is expired or missing. This method encapsulates the complexity of different authentication flows and provides a simple interface for obtaining valid authorization credentials.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/AuthenticationServiceInterface.php#L65)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/AuthenticationServiceInterface.php#L65)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ public function sendAuthenticationRequest(RequestContext $context, callable $req
 
 Send an authentication request using a pre-built RequestContext. Handles the complete lifecycle of authentication requests, including request building, sending, response handling, and telemetry tracking. This method provides a centralized point for all authentication-related HTTP operations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/AuthenticationServiceInterface.php#L87)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/AuthenticationServiceInterface.php#L87)
 
 #### Parameters
 

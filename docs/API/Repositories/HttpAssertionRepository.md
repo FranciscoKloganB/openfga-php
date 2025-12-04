@@ -21,7 +21,7 @@ HTTP implementation of assertion repository for OpenFGA API communication. This 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Repositories/HttpAssertionRepository.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/HttpAssertionRepository.php)
 
 ## Implements
 
@@ -40,7 +40,7 @@ public function read(
 
 Read assertions from an authorization model. Retrieves all test assertions defined for the specified authorization model. Assertions validate that the model behaves correctly for specific scenarios.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/HttpAssertionRepository.php#L48)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/HttpAssertionRepository.php#L48)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ public function write(
 
 Write assertions to an authorization model. Updates the test assertions for the specified authorization model. This replaces any existing assertions with the provided collection.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/HttpAssertionRepository.php#L80)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/HttpAssertionRepository.php#L80)
 
 #### Parameters
 

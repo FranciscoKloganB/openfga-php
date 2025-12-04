@@ -24,7 +24,7 @@ Represents a type definition in an OpenFGA authorization model. Type definitions
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php)
 
 ## Implements
 
@@ -46,7 +46,7 @@ public function getMetadata(): MetadataInterface|null
 
 Get the metadata associated with this type definition. Metadata provides additional context, documentation, and configuration information for the type definition. This can include source file information, module details, and other development-time context.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L39)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L39)
 
 #### Returns
 
@@ -61,7 +61,7 @@ public function getRelations(): TypeDefinitionRelationsInterface|null
 
 Get the collection of relations defined for this type. Relations define the authorized relationships that can exist between objects of this type and other entities in the system.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L49)
 
 #### Returns
 
@@ -76,7 +76,7 @@ public function getType(): string
 
 Get the name of this type. The type name uniquely identifies this type definition within the authorization model. Common examples include &quot;user,&quot; &quot;document,&quot; &quot;folder,&quot; &quot;organization,&quot; etc.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L60)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L60)
 
 #### Returns
 
@@ -89,7 +89,7 @@ public function jsonSerialize(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L66)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TypeDefinitionInterface.php#L66)
 
 #### Returns
 

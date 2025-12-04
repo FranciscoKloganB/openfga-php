@@ -21,7 +21,7 @@ Factory for creating RequestManager instances. This factory encapsulates the cre
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestManagerFactory.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestManagerFactory.php)
 
 ## Methods
 
@@ -34,7 +34,7 @@ public function create(): RequestManager
 
 Create a RequestManager for normal operations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestManagerFactory.php#L55)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestManagerFactory.php#L55)
 
 #### Returns
 
@@ -49,7 +49,7 @@ public function createForBatch(): RequestManager
 
 Create a RequestManager for batch operations (no HTTP retries).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestManagerFactory.php#L77)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestManagerFactory.php#L77)
 
 #### Returns
 
@@ -64,7 +64,7 @@ public function createWithRetries(int $maxRetries): RequestManager
 
 Create a RequestManager with custom retry configuration.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestManagerFactory.php#L101)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestManagerFactory.php#L101)
 
 #### Parameters
 

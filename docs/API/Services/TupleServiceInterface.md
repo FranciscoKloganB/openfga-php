@@ -27,7 +27,7 @@ Service interface for managing OpenFGA relationship tuples. This service provide
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php)
 
 ## Related Classes
 
@@ -50,7 +50,7 @@ public function delete(
 
 Delete a single relationship tuple. Removes the specified relationship, with optional existence checking to provide better error messages when the tuple doesn&#039;t exist.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L79)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L79)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ public function deleteBatch(
 
 Delete multiple relationship tuples in a batch operation. Efficiently removes multiple tuples, with automatic chunking and optional existence checking for better error reporting.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L99)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L99)
 
 #### Parameters
 
@@ -109,7 +109,7 @@ public function exists(
 
 Check if a specific tuple exists in the store. Efficiently verifies tuple existence without retrieving all matching tuples. Useful for validation before operations or conditional logic.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L118)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L118)
 
 #### Parameters
 
@@ -133,7 +133,7 @@ public function getStatistics(StoreInterface|string $store): FailureInterface|Su
 
 Get statistics about tuples in the store. Provides insights into the tuple distribution and counts by type and relation, useful for monitoring and capacity planning.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L134)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L134)
 
 #### Parameters
 
@@ -160,7 +160,7 @@ public function listChanges(
 
 List changes to tuples over time for auditing purposes. Retrieves a chronological log of tuple changes (writes and deletes) within the specified time range, useful for compliance and debugging.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L151)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L151)
 
 #### Parameters
 
@@ -191,7 +191,7 @@ public function read(
 
 Read relationship tuples with optional filtering. Retrieves tuples matching the specified criteria, with automatic pagination handling for large result sets.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L172)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L172)
 
 #### Parameters
 
@@ -221,7 +221,7 @@ public function write(
 
 Write a single relationship tuple. Creates a relationship between a user and an object with the specified relation. This is the most common operation for establishing permissions.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L192)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L192)
 
 #### Parameters
 
@@ -256,7 +256,7 @@ public function writeBatch(
 
 Write multiple relationship tuples in a batch operation. Efficiently writes multiple tuples, with automatic chunking to respect API limits and optional duplicate filtering for performance optimization.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L217)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/TupleServiceInterface.php#L217)
 
 #### Parameters
 

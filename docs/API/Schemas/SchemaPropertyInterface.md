@@ -28,7 +28,7 @@ Interface for schema property definitions. This interface defines the contract f
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php)
 
 ## Related Classes
 
@@ -45,7 +45,7 @@ public function getClassName(): ?string
 
 Get the fully qualified class name for object types.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L29)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L29)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getDefault(): mixed
 
 Get the default value to use when property is missing.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L36)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L36)
 
 #### Returns
 
@@ -75,7 +75,7 @@ public function getEnum(): array<string>|null
 
 Get the array of allowed values for enumeration validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L43)
 
 #### Returns
 
@@ -90,7 +90,7 @@ public function getFormat(): string|null
 
 Get the additional format constraint for this property.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L50)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L50)
 
 #### Returns
 
@@ -105,7 +105,7 @@ public function getItems(): ?array
 
 Get the type specification for array items.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L57)
 
 #### Returns
 
@@ -120,7 +120,7 @@ public function getName(): string
 
 Get the property name as it appears in the data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L64)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L64)
 
 #### Returns
 
@@ -135,7 +135,7 @@ public function getParameterName(): string|null
 
 Get the alternative parameter name for constructor mapping.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L71)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L71)
 
 #### Returns
 
@@ -150,7 +150,7 @@ public function getType(): string
 
 Get the data type for this property.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L78)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L78)
 
 #### Returns
 
@@ -165,7 +165,7 @@ public function isRequired(): bool
 
 Check if this property is required for validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L85)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaPropertyInterface.php#L85)
 
 #### Returns
 

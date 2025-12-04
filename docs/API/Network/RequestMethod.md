@@ -24,7 +24,7 @@ HTTP request methods supported by the OpenFGA API. This enum defines the specifi
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestMethod.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestMethod.php)
 
 ## Implements
 
@@ -60,7 +60,7 @@ public function hasRequestBody(): bool
 
 Check if this HTTP method typically expects a request body. Useful for client implementations to determine whether to include request body serialization and content-type headers.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestMethod.php#L101)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestMethod.php#L101)
 
 #### Returns
 
@@ -75,7 +75,7 @@ public function isIdempotent(): bool
 
 Check if this HTTP method is idempotent. Idempotent methods can be called multiple times with the same effect. This is useful for retry logic and caching decisions in HTTP clients.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestMethod.php#L117)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestMethod.php#L117)
 
 #### Returns
 
@@ -90,7 +90,7 @@ public function isSafe(): bool
 
 Check if this HTTP method is safe. Safe methods do not modify server state and can be cached. This is important for HTTP middleware and caching strategies.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/RequestMethod.php#L133)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/RequestMethod.php#L133)
 
 #### Returns
 

@@ -24,7 +24,7 @@ Authentication error types for the OpenFGA SDK. Defines specific authentication 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/AuthenticationError.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/AuthenticationError.php)
 
 ## Implements
 
@@ -61,7 +61,7 @@ public function exception(
 
 Create a new AuthenticationException for this error type. Factory method that creates an AuthenticationException instance with the current error type and provided context information. This provides a convenient way to generate typed exceptions with proper error categorization and rich debugging context for OpenFGA authentication failures. The exception will automatically capture the correct file and line location where this method was called (typically where `throw` occurs), ensuring debuggers show the actual throw location rather than this factory method.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/AuthenticationError.php#L71)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/AuthenticationError.php#L71)
 
 #### Parameters
 
@@ -85,7 +85,7 @@ public function getUserMessage(string|null $locale = NULL): string
 
 Get a user-friendly error message for this authentication error. Provides appropriate messaging for different authentication failures that can be displayed to end users or used in error logs. Messages are localized using the translation system.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/AuthenticationError.php#L93)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/AuthenticationError.php#L93)
 
 #### Parameters
 
@@ -106,7 +106,7 @@ public function isTokenRefreshable(): bool
 
 Check if this authentication error indicates the token should be refreshed. Useful for implementing automatic token refresh logic in OAuth flows.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/AuthenticationError.php#L110)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/AuthenticationError.php#L110)
 
 #### Returns
 

@@ -24,7 +24,7 @@ Represents a union of multiple nodes in an authorization model tree. When OpenFG
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeUnion.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeUnion.php)
 
 ## Implements
 
@@ -53,7 +53,7 @@ public function getNodes(): array<int, NodeInterface>
 
 Get the collection of nodes that participate in this union. Returns all the nodes that are combined in this union operation. The union result includes users from any of these nodes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeUnion.php#L55)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeUnion.php#L55)
 
 #### Returns
 
@@ -68,7 +68,7 @@ public function jsonSerialize(): array
 
 Serialize the node union to its JSON representation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeUnion.php#L64)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeUnion.php#L64)
 
 #### Returns
 
@@ -85,7 +85,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

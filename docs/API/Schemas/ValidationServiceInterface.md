@@ -23,7 +23,7 @@ Service for validating data against schemas. This service encapsulates the valid
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php)
 
 ## Related Classes
 
@@ -40,7 +40,7 @@ public function hasSchema(string $className): bool
 
 Check if a schema is registered for a class.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L24)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L24)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ public function registerSchema(SchemaInterface $schema): self
 
 Register a schema for validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L32)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L32)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ public function validate(mixed $data, string $className): array<string, mixed>
 
 Validate data against a schema. Validates the provided data against the schema for the specified class. This method only validates structure and types, it does not construct objects.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L47)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L47)
 
 #### Parameters
 
@@ -104,7 +104,7 @@ public function validateProperty(mixed $value, SchemaPropertyInterface $property
 
 Validate a property value against its schema definition.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L60)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/ValidationServiceInterface.php#L60)
 
 #### Parameters
 

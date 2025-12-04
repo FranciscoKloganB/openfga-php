@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ask a Question
-    url: https://github.com/evansims/openfga-php/discussions/new?category=q-a
+    url: https://github.com/franciscokloganb/openfga-php/discussions/new?category=q-a
     about: Ask questions and discuss with other community members
   - name: OpenFGA Documentation
     url: https://openfga.dev/docs

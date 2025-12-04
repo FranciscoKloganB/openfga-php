@@ -24,7 +24,7 @@ Response containing a paginated list of available stores. This response provides
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponse.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponse.php)
 
 ## Implements
 
@@ -53,7 +53,7 @@ public function fromResponse(
 
 Create a response instance from an HTTP response. This method transforms a raw HTTP response from the OpenFGA API into a structured response object, validating and parsing the response data according to the expected schema. It handles both successful responses by parsing and validating the data, and error responses by throwing appropriate exceptions.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ResponseInterface.php#L44)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ResponseInterface.php#L44)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ public function getContinuationToken(): ?string
 
 Get the continuation token for pagination. Returns a token that can be used to retrieve the next page of results when the total number of stores exceeds the page size limit. If null, there are no more results to fetch.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponse.php#L92)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponse.php#L92)
 
 #### Returns
 
@@ -91,7 +91,7 @@ public function getStores(): OpenFGA\Models\Collections\StoresInterface
 
 Get the collection of stores. Returns a type-safe collection containing the store objects from the current page of results. Each store includes its metadata such as ID, name, and timestamps.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponse.php#L101)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponse.php#L101)
 
 #### Returns
 
@@ -108,7 +108,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this response. Returns the schema that defines the structure and validation rules for store listing response data, ensuring consistent parsing and validation of API responses.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php#L33)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php#L33)
 
 #### Returns
 

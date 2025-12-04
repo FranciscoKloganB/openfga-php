@@ -22,7 +22,7 @@ Repository interface for store operations. This interface defines the contract f
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php)
 
 ## Methods
 
@@ -35,7 +35,7 @@ public function create(string $name): ResultInterface
 
 Create a new store with the specified name. Creates a new OpenFGA store which serves as a container for authorization models and relationship tuples. Each store is isolated from others, allowing you to manage multiple authorization configurations in a single OpenFGA instance.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L35)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L35)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ public function delete(string $storeId): ResultInterface
 
 Delete an existing store by ID. Permanently removes a store and all its associated data including authorization models and relationship tuples. This operation cannot be undone, so use with caution in production environments.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L47)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L47)
 
 #### Parameters
 
@@ -77,7 +77,7 @@ public function get(string $storeId): ResultInterface
 
 Get a store by ID. Retrieves the details of an existing store including its name and timestamps. Use this to verify a store exists or to get its current metadata.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L58)
 
 #### Parameters
 
@@ -98,7 +98,7 @@ public function list(string|null $continuationToken = NULL, int|null $pageSize =
 
 List available stores with optional pagination. Retrieves a paginated list of all stores accessible to the authenticated client. Use the continuation token from a previous response to fetch subsequent pages when dealing with large numbers of stores.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L71)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/StoreRepositoryInterface.php#L71)
 
 #### Parameters
 

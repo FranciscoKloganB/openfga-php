@@ -20,7 +20,7 @@ Repository interface for managing OpenFGA authorization model assertions. This i
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Repositories/AssertionRepositoryInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/AssertionRepositoryInterface.php)
 
 ## Methods
 
@@ -33,7 +33,7 @@ public function read(string $authorizationModelId): FailureInterface|SuccessInte
 
 Read assertions from an authorization model. Retrieves all test assertions defined for the specified authorization model. Assertions validate that the model behaves correctly for specific scenarios.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/AssertionRepositoryInterface.php#L30)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/AssertionRepositoryInterface.php#L30)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ public function write(string $authorizationModelId, AssertionsInterface $asserti
 
 Write assertions to an authorization model. Updates the test assertions for the specified authorization model. This replaces any existing assertions with the provided collection.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/AssertionRepositoryInterface.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/AssertionRepositoryInterface.php#L42)
 
 #### Parameters
 

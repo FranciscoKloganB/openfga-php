@@ -24,7 +24,7 @@ Represents a computed userset reference in authorization evaluation trees. A Com
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/Computed.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Computed.php)
 
 ## Implements
 
@@ -54,7 +54,7 @@ public function getUserset(): string
 
 Get the userset reference string that defines a computed relationship. This represents a reference to another userset that should be computed dynamically based on relationships. The userset string typically follows the format &quot;#relation&quot; to reference a relation on the same object type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Computed.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Computed.php#L53)
 
 #### Returns
 
@@ -67,7 +67,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Computed.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Computed.php#L62)
 
 #### Returns
 
@@ -84,7 +84,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 

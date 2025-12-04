@@ -2,15 +2,15 @@
 
 This document contains comprehensive information about the OpenFGA PHP SDK for AI assistants and language models. It includes complete guides, API documentation references, and examples to help implement fine-grained authorization in PHP applications.
 
-**Repository:** https://github.com/evansims/openfga-php  
-**Documentation Wiki:** https://github.com/evansims/openfga-php/wiki  
-**OpenFGA Documentation:** https://openfga.dev/docs  
+**Repository:** https://github.com/franciscokloganb/openfga-php
+**Documentation Wiki:** https://github.com/franciscokloganb/openfga-php/wiki
+**OpenFGA Documentation:** https://openfga.dev/docs
 
 ## Key Information for AI Assistants
 
 - **Language:** PHP 8.3+
-- **Package Name:** `evansims/openfga-php`
-- **Installation:** `composer require evansims/openfga-php`
+- **Package Name:** `franciscokloganb/openfga-php`
+- **Installation:** `composer require franciscokloganb/openfga-php`
 - **Purpose:** Fine-grained authorization and relationship-based access control
 - **Architecture:** Result pattern for error handling, PSR-7/17/18 HTTP standards
 - **Testing:** `composer test` (unit, integration, contract tests)
@@ -22,13 +22,13 @@ This document contains comprehensive information about the OpenFGA PHP SDK for A
 ### SDK Overview and Quick Start
 
 <div align="center">
-  <p><a href="https://openfga.dev"><img src="https://raw.githubusercontent.com/evansims/openfga-php/main/.github/openfga.png" width="100" /></a></p>
+  <p><a href="https://openfga.dev"><img src="https://raw.githubusercontent.com/franciscokloganb/openfga-php/main/.github/openfga.png" width="100" /></a></p>
 
   <h1>OpenFGA PHP SDK</h1>
 
   <p>Stop writing authorization logic. Start asking questions.</p>
 
-  <p><code>composer require evansims/openfga-php</code></p>
+  <p><code>composer require franciscokloganb/openfga-php</code></p>
 </div>
 
 <p><br /></p>
@@ -37,43 +37,43 @@ This document contains comprehensive information about the OpenFGA PHP SDK for A
 
 Build your authorization integration
 
-- [Introduction](https://github.com/evansims/openfga-php/wiki/Introduction)<br />
+- [Introduction](https://github.com/franciscokloganb/openfga-php/wiki/Introduction)<br />
   Start here to get your first authorization check working.
-- [Installation](https://github.com/evansims/openfga-php/wiki/Installation)<br />
+- [Installation](https://github.com/franciscokloganb/openfga-php/wiki/Installation)<br />
   Install the SDK and set up required dependencies for your environment.
-- [Authentication](https://github.com/evansims/openfga-php/wiki/Authentication)<br />
+- [Authentication](https://github.com/franciscokloganb/openfga-php/wiki/Authentication)<br />
   Set up authentication for production environments and managed services.
 
 ##### Essentials
 
 Learn the core concepts and patterns
 
-- [Stores](https://github.com/evansims/openfga-php/wiki/Stores)<br />
+- [Stores](https://github.com/franciscokloganb/openfga-php/wiki/Stores)<br />
   Manage authorization stores for multi-tenant applications and environment separation.
-- [Authorization Models](https://github.com/evansims/openfga-php/wiki/Models)<br />
+- [Authorization Models](https://github.com/franciscokloganb/openfga-php/wiki/Models)<br />
   Learn how to define your permission rules using OpenFGA's intuitive DSL.
-- [Relationship Tuples](https://github.com/evansims/openfga-php/wiki/Tuples)<br />
+- [Relationship Tuples](https://github.com/franciscokloganb/openfga-php/wiki/Tuples)<br />
   Understand how to grant and revoke specific permissions between users and resources.
-- [Permission Queries](https://github.com/evansims/openfga-php/wiki/Queries)<br />
+- [Permission Queries](https://github.com/franciscokloganb/openfga-php/wiki/Queries)<br />
   Master the four types of queries: check permissions, list objects, find users, and expand relationships.
-- [Assertions](https://github.com/evansims/openfga-php/wiki/Assertions)<br />
+- [Assertions](https://github.com/franciscokloganb/openfga-php/wiki/Assertions)<br />
   Define test cases to verify your authorization model.
 
 ##### Features
 
 Explore advanced features and patterns
 
-- [Helper Functions](https://github.com/evansims/openfga-php/wiki/Helpers)<br />
+- [Helper Functions](https://github.com/franciscokloganb/openfga-php/wiki/Helpers)<br />
   Simplify your code with convenient helper functions for common authorization operations.
-- [Concurrency](https://github.com/evansims/openfga-php/wiki/Concurrency)<br />
+- [Concurrency](https://github.com/franciscokloganb/openfga-php/wiki/Concurrency)<br />
   Leveraging the SDK's powerful concurrency features to improve performance when working with large-scale authorization operations.
-- [Exceptions](https://github.com/evansims/openfga-php/wiki/Exceptions)<br />
+- [Exceptions](https://github.com/franciscokloganb/openfga-php/wiki/Exceptions)<br />
   Handling errors and exceptions in your authorization system.
-- [Integration](https://github.com/evansims/openfga-php/wiki/Integration)<br />
+- [Integration](https://github.com/franciscokloganb/openfga-php/wiki/Integration)<br />
   Integrating OpenFGA with your existing systems and frameworks.
-- [Observability](https://github.com/evansims/openfga-php/wiki/Observability)<br />
+- [Observability](https://github.com/franciscokloganb/openfga-php/wiki/Observability)<br />
   Essential tracing and metrics to monitor your authorization system, including advanced event-driven telemetry and custom monitoring patterns.
-- [Results](https://github.com/evansims/openfga-php/wiki/Results)<br />
+- [Results](https://github.com/franciscokloganb/openfga-php/wiki/Results)<br />
   Building robust applications with proper response handling using the SDK's Result pattern.
 
 
@@ -83,123 +83,123 @@ Complete API documentation is available in the GitHub wiki. Here's the organized
 
 ### Core Classes
 
-- [Main OpenFGA client with all operations](https://github.com/evansims/openfga-php/wiki/API-Client)
-- [Client interface definition](https://github.com/evansims/openfga-php/wiki/API-ClientInterface)
-- [DSL to authorization model transformer](https://github.com/evansims/openfga-php/wiki/API-Transformer)
-- [Transformer interface](https://github.com/evansims/openfga-php/wiki/API-TransformerInterface)
-- [Internationalization messages](https://github.com/evansims/openfga-php/wiki/API-Messages)
+- [Main OpenFGA client with all operations](https://github.com/franciscokloganb/openfga-php/wiki/API-Client)
+- [Client interface definition](https://github.com/franciscokloganb/openfga-php/wiki/API-ClientInterface)
+- [DSL to authorization model transformer](https://github.com/franciscokloganb/openfga-php/wiki/API-Transformer)
+- [Transformer interface](https://github.com/franciscokloganb/openfga-php/wiki/API-TransformerInterface)
+- [Internationalization messages](https://github.com/franciscokloganb/openfga-php/wiki/API-Messages)
 
 ### Authentication
 
-- [Base authentication interface](https://github.com/evansims/openfga-php/wiki/API-Authentication-AuthenticationInterface)
-- [Pre-shared key authentication](https://github.com/evansims/openfga-php/wiki/API-Authentication-TokenAuthentication)
-- [OAuth 2.0 client credentials](https://github.com/evansims/openfga-php/wiki/API-Authentication-ClientCredentialAuthentication)
-- [OAuth access token management](https://github.com/evansims/openfga-php/wiki/API-Authentication-AccessToken)
-- [Access token interface](https://github.com/evansims/openfga-php/wiki/API-Authentication-AccessTokenInterface)
+- [Base authentication interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Authentication-AuthenticationInterface)
+- [Pre-shared key authentication](https://github.com/franciscokloganb/openfga-php/wiki/API-Authentication-TokenAuthentication)
+- [OAuth 2.0 client credentials](https://github.com/franciscokloganb/openfga-php/wiki/API-Authentication-ClientCredentialAuthentication)
+- [OAuth access token management](https://github.com/franciscokloganb/openfga-php/wiki/API-Authentication-AccessToken)
+- [Access token interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Authentication-AccessTokenInterface)
 
 ### Models and Data Structures
 
-- [Store model for data isolation](https://github.com/evansims/openfga-php/wiki/API-Models-Store)
-- [Store interface](https://github.com/evansims/openfga-php/wiki/API-Models-StoreInterface)
-- [Authorization model with type definitions](https://github.com/evansims/openfga-php/wiki/API-Models-AuthorizationModel)
-- [Authorization model interface](https://github.com/evansims/openfga-php/wiki/API-Models-AuthorizationModelInterface)
-- [Relationship tuple key (user, relation, object)](https://github.com/evansims/openfga-php/wiki/API-Models-TupleKey)
-- [Tuple key interface](https://github.com/evansims/openfga-php/wiki/API-Models-TupleKeyInterface)
-- [Complete relationship tuple with metadata](https://github.com/evansims/openfga-php/wiki/API-Models-Tuple)
-- [Tuple interface](https://github.com/evansims/openfga-php/wiki/API-Models-TupleInterface)
-- [Type definition with relations](https://github.com/evansims/openfga-php/wiki/API-Models-TypeDefinition)
-- [Type definition interface](https://github.com/evansims/openfga-php/wiki/API-Models-TypeDefinitionInterface)
-- [Conditional authorization logic](https://github.com/evansims/openfga-php/wiki/API-Models-Condition)
-- [Condition interface](https://github.com/evansims/openfga-php/wiki/API-Models-ConditionInterface)
+- [Store model for data isolation](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Store)
+- [Store interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-StoreInterface)
+- [Authorization model with type definitions](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-AuthorizationModel)
+- [Authorization model interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-AuthorizationModelInterface)
+- [Relationship tuple key (user, relation, object)](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-TupleKey)
+- [Tuple key interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-TupleKeyInterface)
+- [Complete relationship tuple with metadata](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Tuple)
+- [Tuple interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-TupleInterface)
+- [Type definition with relations](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-TypeDefinition)
+- [Type definition interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-TypeDefinitionInterface)
+- [Conditional authorization logic](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Condition)
+- [Condition interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-ConditionInterface)
 
 ### Collections
 
-- [Collection of tuple keys](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-TupleKeys)
-- [Tuple keys collection interface](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-TupleKeysInterface)
-- [Collection of tuples](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-Tuples)
-- [Tuples collection interface](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-TuplesInterface)
-- [Collection of type definitions](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-TypeDefinitions)
-- [Type definitions collection interface](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-TypeDefinitionsInterface)
-- [Batch check items collection](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-BatchCheckItems)
-- [Batch check items interface](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-BatchCheckItemsInterface)
-- [Collection of stores](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-Stores)
-- [Stores collection interface](https://github.com/evansims/openfga-php/wiki/API-Models-Collections-StoresInterface)
+- [Collection of tuple keys](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-TupleKeys)
+- [Tuple keys collection interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-TupleKeysInterface)
+- [Collection of tuples](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-Tuples)
+- [Tuples collection interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-TuplesInterface)
+- [Collection of type definitions](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-TypeDefinitions)
+- [Type definitions collection interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-TypeDefinitionsInterface)
+- [Batch check items collection](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-BatchCheckItems)
+- [Batch check items interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-BatchCheckItemsInterface)
+- [Collection of stores](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-Stores)
+- [Stores collection interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Collections-StoresInterface)
 
 ### Enumerations
 
-- [Consistency levels for queries](https://github.com/evansims/openfga-php/wiki/API-Models-Enums-Consistency)
-- [Authorization model schema versions](https://github.com/evansims/openfga-php/wiki/API-Models-Enums-SchemaVersion)
-- [Tuple write operations (write/delete)](https://github.com/evansims/openfga-php/wiki/API-Models-Enums-TupleOperation)
-- [Built-in type names](https://github.com/evansims/openfga-php/wiki/API-Models-Enums-TypeName)
+- [Consistency levels for queries](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Enums-Consistency)
+- [Authorization model schema versions](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Enums-SchemaVersion)
+- [Tuple write operations (write/delete)](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Enums-TupleOperation)
+- [Built-in type names](https://github.com/franciscokloganb/openfga-php/wiki/API-Models-Enums-TypeName)
 
 ### Requests and Responses
 
-- [Authorization check request](https://github.com/evansims/openfga-php/wiki/API-Requests-CheckRequest)
-- [Check request interface](https://github.com/evansims/openfga-php/wiki/API-Requests-CheckRequestInterface)
-- [Batch authorization check request](https://github.com/evansims/openfga-php/wiki/API-Requests-BatchCheckRequest)
-- [Batch check request interface](https://github.com/evansims/openfga-php/wiki/API-Requests-BatchCheckRequestInterface)
-- [Write/delete tuples request](https://github.com/evansims/openfga-php/wiki/API-Requests-WriteTuplesRequest)
-- [Write tuples request interface](https://github.com/evansims/openfga-php/wiki/API-Requests-WriteTuplesRequestInterface)
-- [Read tuples request](https://github.com/evansims/openfga-php/wiki/API-Requests-ReadTuplesRequest)
-- [Read tuples request interface](https://github.com/evansims/openfga-php/wiki/API-Requests-ReadTuplesRequestInterface)
-- [Authorization check response](https://github.com/evansims/openfga-php/wiki/API-Responses-CheckResponse)
-- [Check response interface](https://github.com/evansims/openfga-php/wiki/API-Responses-CheckResponseInterface)
-- [Batch check response](https://github.com/evansims/openfga-php/wiki/API-Responses-BatchCheckResponse)
-- [Batch check response interface](https://github.com/evansims/openfga-php/wiki/API-Responses-BatchCheckResponseInterface)
+- [Authorization check request](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-CheckRequest)
+- [Check request interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-CheckRequestInterface)
+- [Batch authorization check request](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-BatchCheckRequest)
+- [Batch check request interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-BatchCheckRequestInterface)
+- [Write/delete tuples request](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-WriteTuplesRequest)
+- [Write tuples request interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-WriteTuplesRequestInterface)
+- [Read tuples request](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-ReadTuplesRequest)
+- [Read tuples request interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Requests-ReadTuplesRequestInterface)
+- [Authorization check response](https://github.com/franciscokloganb/openfga-php/wiki/API-Responses-CheckResponse)
+- [Check response interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Responses-CheckResponseInterface)
+- [Batch check response](https://github.com/franciscokloganb/openfga-php/wiki/API-Responses-BatchCheckResponse)
+- [Batch check response interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Responses-BatchCheckResponseInterface)
 
 ### Results and Error Handling
 
-- [Success result wrapper](https://github.com/evansims/openfga-php/wiki/API-Results-Success)
-- [Success interface](https://github.com/evansims/openfga-php/wiki/API-Results-SuccessInterface)
-- [Failure result wrapper](https://github.com/evansims/openfga-php/wiki/API-Results-Failure)
-- [Failure interface](https://github.com/evansims/openfga-php/wiki/API-Results-FailureInterface)
-- [Base result interface](https://github.com/evansims/openfga-php/wiki/API-Results-ResultInterface)
+- [Success result wrapper](https://github.com/franciscokloganb/openfga-php/wiki/API-Results-Success)
+- [Success interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Results-SuccessInterface)
+- [Failure result wrapper](https://github.com/franciscokloganb/openfga-php/wiki/API-Results-Failure)
+- [Failure interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Results-FailureInterface)
+- [Base result interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Results-ResultInterface)
 
 ### Exceptions
 
-- [Base client exception](https://github.com/evansims/openfga-php/wiki/API-Exceptions-ClientException)
-- [Client throwable interface](https://github.com/evansims/openfga-php/wiki/API-Exceptions-ClientThrowable)
-- [Authentication errors](https://github.com/evansims/openfga-php/wiki/API-Exceptions-AuthenticationException)
-- [Configuration errors](https://github.com/evansims/openfga-php/wiki/API-Exceptions-ConfigurationException)
-- [Network and HTTP errors](https://github.com/evansims/openfga-php/wiki/API-Exceptions-NetworkException)
-- [Serialization errors](https://github.com/evansims/openfga-php/wiki/API-Exceptions-SerializationException)
+- [Base client exception](https://github.com/franciscokloganb/openfga-php/wiki/API-Exceptions-ClientException)
+- [Client throwable interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Exceptions-ClientThrowable)
+- [Authentication errors](https://github.com/franciscokloganb/openfga-php/wiki/API-Exceptions-AuthenticationException)
+- [Configuration errors](https://github.com/franciscokloganb/openfga-php/wiki/API-Exceptions-ConfigurationException)
+- [Network and HTTP errors](https://github.com/franciscokloganb/openfga-php/wiki/API-Exceptions-NetworkException)
+- [Serialization errors](https://github.com/franciscokloganb/openfga-php/wiki/API-Exceptions-SerializationException)
 
 ### Network and Infrastructure
 
-- [HTTP request management](https://github.com/evansims/openfga-php/wiki/API-Network-RequestManager)
-- [Request manager interface](https://github.com/evansims/openfga-php/wiki/API-Network-RequestManagerInterface)
-- [Retry logic with exponential backoff](https://github.com/evansims/openfga-php/wiki/API-Network-RetryHandler)
-- [Retry handler interface](https://github.com/evansims/openfga-php/wiki/API-Network-RetryHandlerInterface)
-- [Circuit breaker for fault tolerance](https://github.com/evansims/openfga-php/wiki/API-Network-CircuitBreaker)
-- [Circuit breaker interface](https://github.com/evansims/openfga-php/wiki/API-Network-CircuitBreakerInterface)
-- [Request context and metadata](https://github.com/evansims/openfga-php/wiki/API-Network-RequestContext)
-- [Request context interface](https://github.com/evansims/openfga-php/wiki/API-Network-RequestContextInterface)
+- [HTTP request management](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-RequestManager)
+- [Request manager interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-RequestManagerInterface)
+- [Retry logic with exponential backoff](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-RetryHandler)
+- [Retry handler interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-RetryHandlerInterface)
+- [Circuit breaker for fault tolerance](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-CircuitBreaker)
+- [Circuit breaker interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-CircuitBreakerInterface)
+- [Request context and metadata](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-RequestContext)
+- [Request context interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Network-RequestContextInterface)
 
 ### Observability and Monitoring
 
-- [Telemetry provider interface](https://github.com/evansims/openfga-php/wiki/API-Observability-TelemetryInterface)
-- [OpenTelemetry integration](https://github.com/evansims/openfga-php/wiki/API-Observability-OpenTelemetryProvider)
-- [No-op telemetry provider](https://github.com/evansims/openfga-php/wiki/API-Observability-NoOpTelemetryProvider)
-- [Telemetry provider factory](https://github.com/evansims/openfga-php/wiki/API-Observability-TelemetryFactory)
+- [Telemetry provider interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Observability-TelemetryInterface)
+- [OpenTelemetry integration](https://github.com/franciscokloganb/openfga-php/wiki/API-Observability-OpenTelemetryProvider)
+- [No-op telemetry provider](https://github.com/franciscokloganb/openfga-php/wiki/API-Observability-NoOpTelemetryProvider)
+- [Telemetry provider factory](https://github.com/franciscokloganb/openfga-php/wiki/API-Observability-TelemetryFactory)
 
 ### Schema Validation
 
-- [JSON schema definitions](https://github.com/evansims/openfga-php/wiki/API-Schemas-Schema)
-- [Schema interface](https://github.com/evansims/openfga-php/wiki/API-Schemas-SchemaInterface)
-- [Schema validation logic](https://github.com/evansims/openfga-php/wiki/API-Schemas-SchemaValidator)
-- [Schema validator interface](https://github.com/evansims/openfga-php/wiki/API-Schemas-SchemaValidatorInterface)
-- [Schema builder for dynamic schemas](https://github.com/evansims/openfga-php/wiki/API-Schemas-SchemaBuilder)
-- [Schema builder interface](https://github.com/evansims/openfga-php/wiki/API-Schemas-SchemaBuilderInterface)
+- [JSON schema definitions](https://github.com/franciscokloganb/openfga-php/wiki/API-Schemas-Schema)
+- [Schema interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Schemas-SchemaInterface)
+- [Schema validation logic](https://github.com/franciscokloganb/openfga-php/wiki/API-Schemas-SchemaValidator)
+- [Schema validator interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Schemas-SchemaValidatorInterface)
+- [Schema builder for dynamic schemas](https://github.com/franciscokloganb/openfga-php/wiki/API-Schemas-SchemaBuilder)
+- [Schema builder interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Schemas-SchemaBuilderInterface)
 
 ### Translation and Internationalization
 
-- [Message translation service](https://github.com/evansims/openfga-php/wiki/API-Translation-Translator)
-- [Translator interface](https://github.com/evansims/openfga-php/wiki/API-Translation-TranslatorInterface)
-- [YAML parser for translation files](https://github.com/evansims/openfga-php/wiki/API-Translation-YamlParser)
+- [Message translation service](https://github.com/franciscokloganb/openfga-php/wiki/API-Translation-Translator)
+- [Translator interface](https://github.com/franciscokloganb/openfga-php/wiki/API-Translation-TranslatorInterface)
+- [YAML parser for translation files](https://github.com/franciscokloganb/openfga-php/wiki/API-Translation-YamlParser)
 
 ### Framework Integration
 
-- [Laravel service provider](https://github.com/evansims/openfga-php/wiki/API-Integration-ServiceProvider)
+- [Laravel service provider](https://github.com/franciscokloganb/openfga-php/wiki/API-Integration-ServiceProvider)
 
 ## Quick Reference for AI Assistants
 
@@ -346,7 +346,7 @@ $client = new Client(
 
 ### Common Commands
 
-- **Install:** `composer require evansims/openfga-php`
+- **Install:** `composer require franciscokloganb/openfga-php`
 - **Run Tests:** `composer test`
 - **Generate API Docs:** `composer docs:api`
 - **Generate LLMs.txt:** `composer docs:llms`

@@ -23,7 +23,7 @@ Repository contract for relationship tuple operations. This interface defines th
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php)
 
 ## Methods
 
@@ -42,7 +42,7 @@ public function delete(
 
 Delete relationship tuples from the store. Removes existing relationship tuples from the store. Like write operations, supports both transactional and non-transactional modes with the same constraints and options.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L43)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ public function listChanges(
 
 List changes to relationship tuples over time. Retrieves a chronological log of tuple changes (writes and deletes) within the store. Useful for auditing, synchronization, or understanding how relationships evolved. Results can be filtered by object type and time range.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L67)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L67)
 
 #### Parameters
 
@@ -103,7 +103,7 @@ public function read(
 
 Read relationship tuples from the store. Retrieves tuples matching the specified filter criteria. The filter uses partial matching - you can specify any combination of user, relation, and object to narrow results. Results are paginated for efficient retrieval of large datasets.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L90)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L90)
 
 #### Parameters
 
@@ -133,7 +133,7 @@ public function write(
 
 Write relationship tuples to the store. Creates new relationship tuples in the store. Supports both transactional mode (all-or-nothing, limited to 100 tuples) and non-transactional mode for larger batches with configurable parallelism and retry behavior.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L118)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L118)
 
 #### Parameters
 
@@ -165,7 +165,7 @@ public function writeAndDelete(
 
 Write and delete relationship tuples in a single operation. Combines write and delete operations for efficiency, especially useful when you need to atomically replace relationships. In transactional mode, all operations succeed or fail together. In non-transactional mode, operations are batched for optimal performance.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L144)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Repositories/TupleRepositoryInterface.php#L144)
 
 #### Parameters
 

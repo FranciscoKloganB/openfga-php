@@ -23,7 +23,7 @@ Centralized message keys for all exception messages in the OpenFGA PHP SDK. This
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Messages.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Messages.php)
 
 ## Implements
 
@@ -2407,7 +2407,7 @@ public function key(): string
 
 Get the translation key for this message.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Messages.php#L369)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Messages.php#L369)
 
 #### Returns
 

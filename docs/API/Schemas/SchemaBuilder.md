@@ -29,7 +29,7 @@ Fluent builder for creating JSON schemas for data validation and transformation.
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php)
 
 ## Implements
 
@@ -55,7 +55,7 @@ public function array(
 
 Add an array property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L39)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L39)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ public function boolean(string $name, bool $required = false, mixed $default = N
 
 Add a boolean property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L56)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ public function date(string $name, bool $required = false, mixed $default = NULL
 
 Add a date property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L72)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L72)
 
 #### Parameters
 
@@ -125,7 +125,7 @@ public function datetime(string $name, bool $required = false, mixed $default = 
 
 Add a datetime property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L89)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L89)
 
 #### Parameters
 
@@ -148,7 +148,7 @@ public function integer(string $name, bool $required = false, mixed $default = N
 
 Add an integer property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L106)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L106)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ public function number(string $name, bool $required = false, mixed $default = NU
 
 Add a number (float) property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L122)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L122)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ public function object(string $name, string $className, bool $required = false):
 
 Add an object property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L138)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L138)
 
 #### Parameters
 
@@ -217,7 +217,7 @@ public function register(): OpenFGA\Schemas\Schema
 
 Build and register the schema. Creates a Schema instance with all defined properties and registers it in the SchemaRegistry for use in validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L154)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L154)
 
 #### Returns
 
@@ -238,7 +238,7 @@ public function string(
 
 Add a string property to the schema.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L166)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaBuilder.php#L166)
 
 #### Parameters
 

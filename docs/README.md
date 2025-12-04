@@ -1,11 +1,11 @@
 <div align="center">
-  <p><a href="https://openfga.dev"><img src="https://raw.githubusercontent.com/evansims/openfga-php/main/.github/openfga.png" width="100" /></a></p>
+  <p><a href="https://openfga.dev"><img src="https://raw.githubusercontent.com/franciscokloganb/openfga-php/main/.github/openfga.png" width="100" /></a></p>
 
   <h1>OpenFGA PHP SDK</h1>
 
   <p>Stop writing authorization logic. Start asking questions.</p>
 
-  <p><code>composer require evansims/openfga-php</code></p>
+  <p><code>composer require franciscokloganb/openfga-php</code></p>
 </div>
 
 <p><br /></p>

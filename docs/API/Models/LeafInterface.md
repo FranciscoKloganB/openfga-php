@@ -24,7 +24,7 @@ Represents a leaf node in OpenFGA&#039;s userset tree structure. Leaf nodes are 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/LeafInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/LeafInterface.php)
 
 ## Implements
 
@@ -46,7 +46,7 @@ public function getComputed(): ComputedInterface|null
 
 Get the computed userset specification for this leaf. When present, this defines a computed relationship that resolves to other usersets dynamically. This allows for indirect relationships where users are determined by following other relations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/LeafInterface.php#L41)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/LeafInterface.php#L41)
 
 #### Returns
 
@@ -61,7 +61,7 @@ public function getTupleToUserset(): UsersetTreeTupleToUsersetInterface|null
 
 Get the tuple-to-userset operation for this leaf. When present, this defines how to compute users by examining tuples and resolving them to usersets. This enables complex relationship patterns where users are derived from tuple relationships.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/LeafInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/LeafInterface.php#L52)
 
 #### Returns
 
@@ -76,7 +76,7 @@ public function getUsers(): UsersListInterface|null
 
 Get the direct list of users for this leaf node. When present, this provides an explicit list of users who have access through this leaf. This is used for direct user assignments rather than computed or derived access patterns.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/LeafInterface.php#L63)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/LeafInterface.php#L63)
 
 #### Returns
 
@@ -89,7 +89,7 @@ public function jsonSerialize(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/LeafInterface.php#L69)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/LeafInterface.php#L69)
 
 #### Returns
 

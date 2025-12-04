@@ -45,7 +45,7 @@ class ReleaseManager
     private string $version;
     private string $changelogPath;
     private string $clientPath;
-    private string $githubRepoUrl = 'https://github.com/evansims/openfga-php';
+    private string $githubRepoUrl = 'https://github.com/franciscokloganb/openfga-php';
 
     public function __construct(string $projectRoot, string $version)
     {
@@ -296,10 +296,10 @@ class ReleaseManager
 
         // Check for staged changes
         $stagedChanges = $this->runCommand('git diff --cached --name-only', 'Failed to check for staged changes', true);
-        
+
         // Check for unstaged changes
         $unstagedChanges = $this->runCommand('git diff --name-only', 'Failed to check for unstaged changes', true);
-        
+
         // Check for untracked files
         $untrackedFiles = $this->runCommand('git ls-files --others --exclude-standard', 'Failed to check for untracked files', true);
 
@@ -343,7 +343,7 @@ class ReleaseManager
 
         // Check if there are any changes to commit
         $statusOutput = $this->runCommand('git status --porcelain', 'Failed to check git status', true);
-        
+
         if (empty($statusOutput) || count(array_filter($statusOutput)) === 0) {
             echo "   ℹ️  No changes to commit\n";
             return;

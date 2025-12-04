@@ -25,7 +25,7 @@ Service interface for managing OpenFGA authorization models. This service provid
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php)
 
 ## Related Classes
 
@@ -42,7 +42,7 @@ public function cloneModel(string $modelId): FailureInterface|SuccessInterface
 
 Clone an authorization model to another store. Copies a model from one store to another, useful for multi-tenant scenarios where you want to replicate a permission structure. The cloned model gets a new ID in the target store.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L73)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L73)
 
 #### Parameters
 
@@ -67,7 +67,7 @@ public function createModel(
 
 Create a new authorization model with validation. Creates an immutable authorization model from the provided type definitions and optional conditions. The model is validated before creation to ensure it conforms to OpenFGA&#039;s schema requirements.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L89)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L89)
 
 #### Parameters
 
@@ -90,7 +90,7 @@ public function findModel(string $modelId): FailureInterface|SuccessInterface
 
 Find a specific authorization model by ID. Retrieves a model with enhanced error handling, providing clear messages when models are not found or other errors occur.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L104)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L104)
 
 #### Parameters
 
@@ -111,7 +111,7 @@ public function getLatestModel(StoreInterface|string $store): FailureInterface|S
 
 Get the most recent authorization model for a store. Retrieves the latest model version, which is typically the active model being used for authorization decisions. This is a convenience method that avoids needing to list all models and manually find the newest one.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L118)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L118)
 
 #### Parameters
 
@@ -135,7 +135,7 @@ public function listAllModels(
 
 List all authorization models for a store. Retrieves all models with automatic pagination handling. This method aggregates results across multiple pages up to the specified limit.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L132)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L132)
 
 #### Parameters
 
@@ -160,7 +160,7 @@ public function validateModel(
 
 Validate type definitions before creating a model. Performs validation on type definitions to catch errors before attempting to create a model. This is useful for providing immediate feedback in user interfaces or validation pipelines.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L148)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/ModelServiceInterface.php#L148)
 
 #### Parameters
 

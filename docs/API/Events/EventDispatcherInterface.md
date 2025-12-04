@@ -24,7 +24,7 @@ Event dispatcher interface for handling domain events. The event dispatcher deco
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Events/EventDispatcherInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventDispatcherInterface.php)
 
 ## Related Classes
 
@@ -41,7 +41,7 @@ public function addListener(string $eventType, callable $listener): void
 
 Register an event listener for a specific event type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L22)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L22)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ public function dispatch(EventInterface $event): void
 
 Dispatch an event to all registered listeners. Calls all listeners registered for the given event&#039;s type. If an event is stoppable and a listener stops propagation, remaining listeners will not be called.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L33)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L33)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ public function getListeners(string $eventType): array<callable(object): void>
 
 Get all registered listeners for a specific event type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L41)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L41)
 
 #### Parameters
 
@@ -105,7 +105,7 @@ public function hasListeners(string $eventType): bool
 
 Check if there are any listeners for a specific event type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L49)
 
 #### Parameters
 
@@ -126,7 +126,7 @@ public function removeListeners(string $eventType): void
 
 Remove all listeners for a specific event type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventDispatcherInterface.php#L56)
 
 #### Parameters
 

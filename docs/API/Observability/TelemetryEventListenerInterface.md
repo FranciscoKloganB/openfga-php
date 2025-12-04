@@ -23,7 +23,7 @@ Interface for event listeners that forward domain events to telemetry providers.
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php)
 
 ## Related Classes
 
@@ -40,7 +40,7 @@ public function onHttpRequestSent(HttpRequestSentEvent $event): void
 
 Handle HTTP request sent events. Records telemetry data when an HTTP request is sent, including request method, URL, body size, and OpenFGA-specific context like operation, store ID, and model ID.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L27)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L27)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ public function onHttpResponseReceived(HttpResponseReceivedEvent $event): void
 
 Handle HTTP response received events. Records telemetry data when an HTTP response is received, including response status, body size, and any exception information if the request failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L38)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L38)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ public function onOperationCompleted(OperationCompletedEvent $event): void
 
 Handle operation completed events. Records telemetry data when an OpenFGA operation completes, including success status, operation context, and exception details if the operation failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L49)
 
 #### Parameters
 
@@ -103,7 +103,7 @@ public function onOperationStarted(OperationStartedEvent $event): void
 
 Handle operation started events. Records telemetry data when an OpenFGA operation begins, including operation type, store context, and model information.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L59)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Observability/TelemetryEventListenerInterface.php#L59)
 
 #### Parameters
 

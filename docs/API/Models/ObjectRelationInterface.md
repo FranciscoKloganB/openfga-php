@@ -23,7 +23,7 @@ Represents an object-relation pair in OpenFGA authorization models. Object-relat
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/ObjectRelationInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ObjectRelationInterface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getObject(): ?string
 
 Get the object identifier in an object-relation pair. The object represents the resource or entity being referenced, typically formatted as &quot;type:id&quot; where type describes the kind of resource.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ObjectRelationInterface.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ObjectRelationInterface.php#L40)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getRelation(): string
 
 Get the relation name that defines the type of relationship to the object. The relation describes what kind of permission or relationship exists. Common examples include &quot;owner,&quot; &quot;viewer,&quot; &quot;editor,&quot; &quot;member.&quot;
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ObjectRelationInterface.php#L50)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ObjectRelationInterface.php#L50)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ObjectRelationInterface.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ObjectRelationInterface.php#L56)
 
 #### Returns
 

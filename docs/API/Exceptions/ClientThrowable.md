@@ -31,7 +31,7 @@ Base interface for all OpenFGA SDK exceptions. Extends the standard PHP Throwabl
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientThrowable.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientThrowable.php)
 
 ## Implements
 
@@ -49,7 +49,7 @@ public function context(): array<string, mixed>
 
 Get additional context information about the exception. Provides access to contextual data that was available when the exception occurred, such as parameter values, configuration details, API response data, or other relevant debugging information. This context is essential for understanding the circumstances that led to the error and can be used for logging, debugging, and error reporting.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L45)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L45)
 
 #### Returns
 
@@ -137,7 +137,7 @@ public function kind(): AuthenticationError|ClientError|ConfigurationError|Netwo
 
 Get the specific error category for this exception. Returns the error classification that indicates the general category of the problem (authentication, configuration, network, etc.), allowing for categorized error handling and reporting. This categorization helps applications implement appropriate retry logic, user messaging, and error recovery strategies based on the type of failure.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L58)
 
 #### Returns
 
@@ -152,7 +152,7 @@ public function previous(): Throwable|null
 
 Get the previous exception that caused this one. Provides access to the exception chain for cases where this exception was triggered by another underlying exception. This maintains the full context of error propagation and is essential for root cause analysis when exceptions are wrapped or transformed during processing.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L70)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L70)
 
 #### Returns
 
@@ -167,7 +167,7 @@ public function request(): RequestInterface|null
 
 Get the HTTP request associated with this exception. Returns the PSR-7 HTTP request that was being processed when this exception occurred. This is particularly useful for debugging API call failures, allowing developers to inspect the request URL, headers, body, and method that led to the error condition.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L82)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L82)
 
 #### Returns
 
@@ -182,7 +182,7 @@ public function response(): ResponseInterface|null
 
 Get the HTTP response associated with this exception. Returns the PSR-7 HTTP response that was received when this exception occurred, providing access to status codes, headers, and response body for debugging. This is especially valuable for understanding API-level failures and can contain detailed error messages from the OpenFGA service.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L94)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Exceptions/ClientThrowable.php#L94)
 
 #### Returns
 

@@ -22,7 +22,7 @@ Interface for permission check response objects. This interface defines the cont
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/CheckResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CheckResponseInterface.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getAllowed(): bool|null
 
 Get whether the permission check was allowed. This is the primary result of the permission check operation, indicating whether the specified user has the requested permission on the given object according to the authorization model and current relationship data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/CheckResponseInterface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CheckResponseInterface.php#L43)
 
 #### Returns
 
@@ -59,7 +59,7 @@ public function getResolution(): string|null
 
 Get the resolution details for the permission decision. This provides additional information about how the permission decision was reached, which can be useful for understanding complex authorization logic or debugging permission issues.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/CheckResponseInterface.php#L54)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/CheckResponseInterface.php#L54)
 
 #### Returns
 

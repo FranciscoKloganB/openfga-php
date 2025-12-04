@@ -24,7 +24,7 @@ Response containing a paginated list of relationship tuples. This response provi
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/ReadTuplesResponse.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ReadTuplesResponse.php)
 
 ## Implements
 
@@ -53,7 +53,7 @@ public function fromResponse(
 
 Create a response instance from an HTTP response. This method transforms a raw HTTP response from the OpenFGA API into a structured response object, validating and parsing the response data according to the expected schema. It handles both successful responses by parsing and validating the data, and error responses by throwing appropriate exceptions.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ResponseInterface.php#L44)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ResponseInterface.php#L44)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ public function getContinuationToken(): ?string
 
 Get the continuation token for pagination. Returns a token that can be used to retrieve the next page of results when the total number of matching tuples exceeds the page size limit. If null, there are no more results to fetch.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ReadTuplesResponse.php#L95)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ReadTuplesResponse.php#L95)
 
 #### Returns
 
@@ -91,7 +91,7 @@ public function getTuples(): OpenFGA\Models\Collections\TuplesInterface
 
 Get the collection of relationship tuples. Returns a type-safe collection containing the tuple objects that match the read query criteria. Each tuple represents a relationship between a user and an object through a specific relation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ReadTuplesResponse.php#L104)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ReadTuplesResponse.php#L104)
 
 #### Returns
 
@@ -108,7 +108,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this response. Returns the schema that defines the structure and validation rules for tuple reading response data, ensuring consistent parsing and validation of API responses.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ReadTuplesResponseInterface.php#L33)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ReadTuplesResponseInterface.php#L33)
 
 #### Returns
 

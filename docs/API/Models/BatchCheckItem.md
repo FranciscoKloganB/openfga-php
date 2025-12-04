@@ -28,7 +28,7 @@ Represents a single item in a batch check request. Each batch check item contain
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php)
 
 ## Implements
 
@@ -58,7 +58,7 @@ public function getContext(): ?object
 
 Get the context object for this check. This provides additional context data that can be used by conditions in the authorization model during evaluation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php#L195)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php#L195)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function getContextualTuples(): ?OpenFGA\Models\Collections\TupleKeysInte
 
 Get the contextual tuples for this check. These are additional tuples that are evaluated only for this specific check and are not persisted in the store.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php#L204)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php#L204)
 
 #### Returns
 
@@ -88,7 +88,7 @@ public function getCorrelationId(): string
 
 Get the correlation ID for this batch check item. This unique identifier maps the result back to this specific check. Must be alphanumeric characters or hyphens, maximum 36 characters.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php#L213)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php#L213)
 
 #### Returns
 
@@ -103,7 +103,7 @@ public function getTupleKey(): OpenFGA\Models\TupleKeyInterface
 
 Get the tuple key to be checked. This defines the user, relation, and object for the authorization check.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php#L222)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php#L222)
 
 #### Returns
 
@@ -116,7 +116,7 @@ public function jsonSerialize(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php#L233)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php#L233)
 
 #### Returns
 
@@ -133,7 +133,7 @@ public function schema(): SchemaInterface
 
 Get the schema definition for this model. This method returns the schema that defines the structure, validation rules, and serialization behavior for this model class. The schema is used for data validation, transformation, and ensuring consistency across API operations with the OpenFGA service. Each model&#039;s schema defines: - Required and optional properties - Data types and format constraints - Nested object relationships - Validation rules and business logic constraints The schema system enables the SDK to automatically validate incoming data, transform between different representations, and ensure compliance with the OpenFGA API specification.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/ModelInterface.php#L52)
 
 #### Returns
 
@@ -146,7 +146,7 @@ public function toArray(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchCheckItem.php#L248)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchCheckItem.php#L248)
 
 #### Returns
 

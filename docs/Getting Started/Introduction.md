@@ -33,7 +33,7 @@ Your server is now accessible at `http://localhost:8080`.
 Use Composer to add the SDK to your application:
 
 ```bash
-composer require evansims/openfga-php
+composer require franciscokloganb/openfga-php
 ```
 
 In some cases you may need to [install additional dependencies](Installation.md) for the SDK.

@@ -24,7 +24,7 @@ Consistency levels for OpenFGA authorization queries. This enum defines the avai
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/Consistency.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/Consistency.php)
 
 ## Implements
 
@@ -58,7 +58,7 @@ public function getDescription(): string
 
 Get a user-friendly description of this consistency level. Provides a descriptive explanation of what this consistency level means for query behavior and performance characteristics.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/Consistency.php#L55)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/Consistency.php#L55)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function prioritizesConsistency(): bool
 
 Check if this consistency level prioritizes data freshness. Useful for determining if a query will potentially have higher latency in exchange for more up-to-date data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/Consistency.php#L72)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/Consistency.php#L72)
 
 #### Returns
 
@@ -88,7 +88,7 @@ public function prioritizesPerformance(): bool
 
 Check if this consistency level prioritizes query performance. Useful for determining if a query will potentially use stale data in exchange for better performance.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/Consistency.php#L88)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/Consistency.php#L88)
 
 #### Returns
 

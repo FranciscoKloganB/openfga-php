@@ -28,7 +28,7 @@ Ambient Context Manager. Provides Python-style context management for PHP, allow
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Context/Context.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/Context.php)
 
 ## Implements
 
@@ -51,7 +51,7 @@ public function current(): self
 
 Get the current ambient context.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L26)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L26)
 
 #### Returns
 
@@ -68,7 +68,7 @@ public function depth(): int
 
 Get the current nesting depth of contexts.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L33)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L33)
 
 #### Returns
 
@@ -85,7 +85,7 @@ public function getClient(): ClientInterface|null
 
 Get the current client.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L40)
 
 #### Returns
 
@@ -102,7 +102,7 @@ public function getModel(): AuthorizationModelInterface|string|null
 
 Get the current authorization model.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L47)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L47)
 
 #### Returns
 
@@ -119,7 +119,7 @@ public function getPrevious(): ?self
 
 Get the previous context in the stack.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L52)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L52)
 
 #### Returns
 
@@ -136,7 +136,7 @@ public function getStore(): StoreInterface|string|null
 
 Get the current store.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L59)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L59)
 
 #### Returns
 
@@ -153,7 +153,7 @@ public function hasContext(): bool
 
 Check if an ambient context is currently active.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L66)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L66)
 
 #### Returns
 
@@ -175,7 +175,7 @@ public function with(
 
 Execute a callable within a new ambient context.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php#L82)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php#L82)
 
 #### Parameters
 

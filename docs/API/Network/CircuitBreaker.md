@@ -25,7 +25,7 @@ Circuit breaker implementation for preventing cascade failures in distributed sy
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Network/CircuitBreaker.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/CircuitBreaker.php)
 
 ## Implements
 
@@ -46,7 +46,7 @@ public function getFailureCount(string $endpoint): int
 
 Get the current failure count for an endpoint. Returns the number of consecutive failures recorded for the specified endpoint. This can be useful for logging and monitoring purposes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/CircuitBreaker.php#L54)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/CircuitBreaker.php#L54)
 
 #### Parameters
 
@@ -67,7 +67,7 @@ public function isOpen(string $endpoint): bool
 
 Check if the circuit is currently open for an endpoint. Returns true if the circuit breaker is currently blocking requests to the specified endpoint due to excessive failures.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/CircuitBreaker.php#L65)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/CircuitBreaker.php#L65)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ public function recordFailure(string $endpoint): void
 
 Record a failure for the specified endpoint. Increments the failure count for the endpoint and updates the failure timestamp. If the failure threshold is reached, the circuit will open and block subsequent requests until the cooldown period expires.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/CircuitBreaker.php#L74)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/CircuitBreaker.php#L74)
 
 #### Parameters
 
@@ -109,7 +109,7 @@ public function recordSuccess(string $endpoint): void
 
 Record a successful request for the specified endpoint. Resets the failure state for the endpoint, effectively closing the circuit and allowing normal operation to resume. This should be called whenever a request succeeds after previous failures.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/CircuitBreaker.php#L85)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/CircuitBreaker.php#L85)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ public function shouldRetry(string $endpoint): bool
 
 Check if the circuit breaker should allow a request to the specified endpoint. Evaluates whether a request should be allowed based on the current circuit state for the given endpoint. If the cooldown period has passed, the circuit is automatically reset to allow new attempts.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Network/CircuitBreaker.php#L95)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Network/CircuitBreaker.php#L95)
 
 #### Parameters
 

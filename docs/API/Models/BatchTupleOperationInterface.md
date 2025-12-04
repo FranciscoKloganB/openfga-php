@@ -27,7 +27,7 @@ Interface for batch tuple operations. Defines the contract for organizing tuple 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php)
 
 ## Implements
 
@@ -49,7 +49,7 @@ public function chunk(int $chunkSize = 100): array<BatchTupleOperationInterface>
 
 Split this operation into smaller chunks that respect API limits. If the operation doesn&#039;t require chunking, returns an array containing only this operation. Otherwise, splits the writes and deletes across multiple operations to stay within the specified chunk size.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L37)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L37)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ public function getDeletes(): TupleKeysInterface|null
 
 Get the tuples to delete in this operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L44)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L44)
 
 #### Returns
 
@@ -85,7 +85,7 @@ public function getTotalOperations(): int
 
 Get the total number of operations (writes + deletes).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L51)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L51)
 
 #### Returns
 
@@ -100,7 +100,7 @@ public function getWrites(): TupleKeysInterface|null
 
 Get the tuples to write in this operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L58)
 
 #### Returns
 
@@ -115,7 +115,7 @@ public function isEmpty(): bool
 
 Check if this operation is empty (no writes or deletes).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L65)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L65)
 
 #### Returns
 
@@ -137,7 +137,7 @@ public function requiresChunking(int $chunkSize = 100): bool
 
 Check if this operation requires chunking due to size limits.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L73)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleOperationInterface.php#L73)
 
 #### Parameters
 

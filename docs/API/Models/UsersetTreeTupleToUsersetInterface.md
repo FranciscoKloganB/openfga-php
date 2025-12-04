@@ -23,7 +23,7 @@ Defines a tuple-to-userset operation node in authorization evaluation trees. Use
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getComputed(): array<int, ComputedInterface>
 
 Get the array of computed usersets for the tuple-to-userset operation. This returns a collection of computed userset references that define how to resolve the users from the tuple-to-userset mapping in the tree expansion.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php#L30)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php#L30)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getTupleset(): string
 
 Get the tupleset string identifying which tuples to use for computation. This string identifies the specific tupleset that should be used to resolve users through the tuple-to-userset operation during tree expansion.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php#L40)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php#L46)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeTupleToUsersetInterface.php#L46)
 
 #### Returns
 

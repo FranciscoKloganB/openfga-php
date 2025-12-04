@@ -26,7 +26,7 @@ Data types supported in OpenFGA condition parameters. This enum defines the avai
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TypeName.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TypeName.php)
 
 ## Implements
 
@@ -78,7 +78,7 @@ public function getPhpType(): string
 
 Get the corresponding PHP type for this OpenFGA type. Returns the equivalent PHP type name that would be used for values of this type in PHP code.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TypeName.php#L122)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TypeName.php#L122)
 
 #### Returns
 
@@ -93,7 +93,7 @@ public function isCollection(): bool
 
 Check if this type represents a collection of values. Useful for determining if iteration or collection-specific operations can be performed on parameters of this type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TypeName.php#L148)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TypeName.php#L148)
 
 #### Returns
 
@@ -108,7 +108,7 @@ public function isFlexible(): bool
 
 Check if this type accepts flexible or dynamic values. Useful for determining if runtime type checking is needed or if strict type validation can be bypassed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TypeName.php#L166)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TypeName.php#L166)
 
 #### Returns
 
@@ -123,7 +123,7 @@ public function isNumeric(): bool
 
 Check if this type represents a numeric value. Useful for validation and type checking in condition parameter processing where numeric operations are involved.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TypeName.php#L184)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TypeName.php#L184)
 
 #### Returns
 
@@ -138,7 +138,7 @@ public function isTemporal(): bool
 
 Check if this type represents a temporal value. Useful for determining if time-based operations can be performed on parameters of this type.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/Enums/TypeName.php#L202)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/Enums/TypeName.php#L202)
 
 #### Returns
 

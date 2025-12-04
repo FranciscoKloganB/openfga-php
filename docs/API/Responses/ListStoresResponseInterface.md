@@ -22,7 +22,7 @@ Interface for stores listing response objects. This interface defines the contra
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getContinuationToken(): string|null
 
 Get the continuation token for pagination. Returns a token that can be used to retrieve the next page of results when the total number of stores exceeds the page size limit. If null, there are no more results to fetch.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php#L44)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php#L44)
 
 #### Returns
 
@@ -59,7 +59,7 @@ public function getStores(): StoresInterface
 
 Get the collection of stores. Returns a type-safe collection containing the store objects from the current page of results. Each store includes its metadata such as ID, name, and timestamps.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php#L54)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/ListStoresResponseInterface.php#L54)
 
 #### Returns
 

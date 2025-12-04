@@ -22,7 +22,7 @@ Service for handling HTTP communication. This service abstracts HTTP operations 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Services/HttpServiceInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/HttpServiceInterface.php)
 
 ## Related Classes
 
@@ -39,7 +39,7 @@ public function getLastRequest(): HttpRequestInterface|null
 
 Get the last HTTP request sent. Returns the most recent HTTP request sent by this service, useful for debugging and error reporting.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/HttpServiceInterface.php#L28)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/HttpServiceInterface.php#L28)
 
 #### Returns
 
@@ -54,7 +54,7 @@ public function getLastResponse(): HttpResponseInterface|null
 
 Get the last HTTP response received. Returns the most recent HTTP response received by this service, useful for debugging and error reporting.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/HttpServiceInterface.php#L38)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/HttpServiceInterface.php#L38)
 
 #### Returns
 
@@ -69,7 +69,7 @@ public function send(RequestInterface $request): HttpResponseInterface
 
 Send an HTTP request. Sends a request to the OpenFGA API and returns the response. This method handles all HTTP-level concerns including authentication, retries, and error handling.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/HttpServiceInterface.php#L54)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/HttpServiceInterface.php#L54)
 
 #### Parameters
 

@@ -22,7 +22,7 @@ Interface for creating a new OpenFGA store. This interface defines the contract 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Requests/CreateStoreRequestInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/CreateStoreRequestInterface.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getName(): string
 
 Get the name for the new store. Returns the human-readable name that will be assigned to the new store. This name is used for identification and administrative purposes and should be descriptive enough to distinguish the store from others in your organization. The store name: - Must be a non-empty string - Should be descriptive and meaningful for administrative purposes - Is used for display in management interfaces and logging - Does not need to be globally unique (the store ID serves that purpose)
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/CreateStoreRequestInterface.php#L45)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/CreateStoreRequestInterface.php#L45)
 
 #### Returns
 
@@ -59,7 +59,7 @@ public function getRequest(StreamFactoryInterface $streamFactory): RequestContex
 
 Build a request context for HTTP execution. Transforms the request object into a standardized HTTP request context that can be executed by the OpenFGA HTTP client. This method handles all aspects of request preparation including parameter serialization, URL construction, header configuration, and body stream creation. The method validates that all required parameters are present and properly formatted, serializes complex objects to JSON, constructs the appropriate API endpoint URL, and creates the necessary HTTP message body streams.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
 
 #### Parameters
 

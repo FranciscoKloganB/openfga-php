@@ -23,7 +23,7 @@ Defines a difference operation node in authorization evaluation trees. UsersetTr
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getBase(): NodeInterface
 
 Get the base node from which the subtract node will be removed. This represents the initial node in the userset tree from which users will be subtracted to compute the final difference result.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php#L30)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php#L30)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getSubtract(): NodeInterface
 
 Get the node representing users to subtract from the base. This represents the node in the userset tree whose users should be removed from the base node to compute the final difference result.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php#L40)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function jsonSerialize(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php#L46)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/UsersetTreeDifferenceInterface.php#L46)
 
 #### Returns
 

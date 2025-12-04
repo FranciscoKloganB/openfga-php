@@ -49,7 +49,7 @@ jobs:
 
       - name: Start OpenFGA
         run: |
-          echo "Using Docker image: ghcr.io/evansims/openfga-php-integration-tests:latest"
+          echo "Using Docker image: ghcr.io/franciscokloganb/openfga-php-integration-tests:latest"
           docker compose -f docker-compose.integration.yml up -d
 
       - name: Run integration tests

@@ -32,7 +32,7 @@ Event fired when an HTTP response is received from the OpenFGA API. This event c
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php)
 
 ## Implements
 
@@ -49,7 +49,7 @@ public function getEventId(): string
 
 Get the unique identifier for this event.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L40)
 
 #### Returns
 
@@ -64,7 +64,7 @@ public function getEventType(): string
 
 Get the name/type of this event.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L49)
 
 #### Returns
 
@@ -79,7 +79,7 @@ public function getException(): Throwable|null
 
 Get the exception if the request failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L53)
 
 #### Returns
 
@@ -94,7 +94,7 @@ public function getModelId(): string|null
 
 Get the model ID for the operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L63)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L63)
 
 #### Returns
 
@@ -109,7 +109,7 @@ public function getOccurredAt(): DateTimeImmutable
 
 Get when this event occurred.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L58)
 
 #### Returns
 
@@ -124,7 +124,7 @@ public function getOperation(): string
 
 Get the OpenFGA operation name.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L73)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L73)
 
 #### Returns
 
@@ -139,7 +139,7 @@ public function getPayload(): array
 
 Get the event payload data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L67)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L67)
 
 #### Returns
 
@@ -154,7 +154,7 @@ public function getRequest(): RequestInterface
 
 Get the HTTP request that was sent.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L83)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L83)
 
 #### Returns
 
@@ -169,7 +169,7 @@ public function getResponse(): ResponseInterface|null
 
 Get the HTTP response received.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L93)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L93)
 
 #### Returns
 
@@ -184,7 +184,7 @@ public function getStoreId(): string|null
 
 Get the store ID for the operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L103)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L103)
 
 #### Returns
 
@@ -199,7 +199,7 @@ public function isPropagationStopped(): bool
 
 Check if event propagation should be stopped.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L76)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L76)
 
 #### Returns
 
@@ -214,7 +214,7 @@ public function isSuccessful(): bool
 
 Check if the HTTP request was successful.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L113)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/HttpResponseReceivedEvent.php#L113)
 
 #### Returns
 
@@ -229,7 +229,7 @@ public function stopPropagation(): void
 
 Stop event propagation to remaining listeners.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L85)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L85)
 
 #### Returns
 

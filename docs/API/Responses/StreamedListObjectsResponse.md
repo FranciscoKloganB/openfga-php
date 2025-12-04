@@ -22,7 +22,7 @@ Response containing streaming objects that a user has a specific relationship wi
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/StreamedListObjectsResponse.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/StreamedListObjectsResponse.php)
 
 ## Implements
 
@@ -50,7 +50,7 @@ public function fromResponse(
 
 Create a streaming response from an HTTP response. Processes the streaming HTTP response and returns a Generator that yields individual object identifiers as they are received from the server.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/StreamedListObjectsResponseInterface.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/StreamedListObjectsResponseInterface.php#L42)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ public function getObject(): string
 
 Get a single object identifier from a streamed response chunk.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/StreamedListObjectsResponse.php#L128)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/StreamedListObjectsResponse.php#L128)
 
 #### Returns
 

@@ -29,7 +29,7 @@ Represents a single property definition within a schema. This class defines the 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php)
 
 ## Implements
 
@@ -50,7 +50,7 @@ public function getClassName(): ?string
 
 Get the fully qualified class name for object types.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L53)
 
 #### Returns
 
@@ -65,7 +65,7 @@ public function getDefault(): mixed
 
 Get the default value to use when property is missing.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L62)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L62)
 
 #### Returns
 
@@ -80,7 +80,7 @@ public function getEnum(): ?array
 
 Get the array of allowed values for enumeration validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L71)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L71)
 
 #### Returns
 
@@ -95,7 +95,7 @@ public function getFormat(): ?string
 
 Get the additional format constraint for this property.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L80)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L80)
 
 #### Returns
 
@@ -110,7 +110,7 @@ public function getItems(): ?array
 
 Get the type specification for array items.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L89)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L89)
 
 #### Returns
 
@@ -125,7 +125,7 @@ public function getName(): string
 
 Get the property name as it appears in the data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L98)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L98)
 
 #### Returns
 
@@ -140,7 +140,7 @@ public function getParameterName(): ?string
 
 Get the alternative parameter name for constructor mapping.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L107)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L107)
 
 #### Returns
 
@@ -155,7 +155,7 @@ public function getType(): string
 
 Get the data type for this property.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L116)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L116)
 
 #### Returns
 
@@ -170,7 +170,7 @@ public function isRequired(): bool
 
 Check if this property is required for validation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L125)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Schemas/SchemaProperty.php#L125)
 
 #### Returns
 

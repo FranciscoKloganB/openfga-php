@@ -22,7 +22,7 @@ Represents a union operation between multiple nodes in a userset tree. A node un
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeUnionInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeUnionInterface.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getNodes(): array<int, NodeInterface>
 
 Get the collection of nodes that participate in this union. Returns all the nodes that are combined in this union operation. The union result includes users from any of these nodes.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeUnionInterface.php#L26)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeUnionInterface.php#L26)
 
 #### Returns
 
@@ -59,7 +59,7 @@ public function jsonSerialize(): array
 
 Serialize the node union to its JSON representation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/NodeUnionInterface.php#L34)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/NodeUnionInterface.php#L34)
 
 #### Returns
 

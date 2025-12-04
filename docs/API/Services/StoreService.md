@@ -27,7 +27,7 @@ Service implementation for high-level store operations. This service provides bu
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php)
 
 ## Implements
 
@@ -48,7 +48,7 @@ public function createStore(string $name): OpenFGA\Results\FailureInterface|Open
 
 Creates a new store with validation. This method creates a new OpenFGA store after validating the provided name. It ensures the name meets requirements before attempting creation, providing clearer error messages than the raw API when validation fails.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L68)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L68)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ public function deleteStore(
 
 Deletes a store with optional confirmation. This method deletes a store after optionally verifying it exists first. When confirmation is enabled, it provides clearer error messages if the store doesn&#039;t exist, preventing confusion about failed delete operations.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L109)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L109)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ public function findStore(string $storeId): OpenFGA\Results\FailureInterface|Ope
 
 Finds a store by ID with enhanced error handling. This method retrieves a store by its ID, providing more descriptive error messages when the store is not found or when other errors occur. It helps distinguish between &quot;not found&quot; and other types of failures.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L133)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L133)
 
 #### Parameters
 
@@ -118,7 +118,7 @@ public function findStoresByName(
 
 Finds stores by name pattern. This method searches for stores whose names match a given pattern, supporting basic wildcard matching. It&#039;s useful for finding stores in multi-tenant scenarios or when working with naming conventions.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L171)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L171)
 
 #### Parameters
 
@@ -140,7 +140,7 @@ public function getOrCreateStore(string $name): OpenFGA\Results\FailureInterface
 
 Gets an existing store or creates a new one with the given name. This convenience method first attempts to find a store by name among existing stores. If no store with the given name exists, it creates a new one. This is useful for idempotent store setup in development or testing scenarios. Note: This method lists all stores to find matches by name, which may be inefficient with large numbers of stores.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L216)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L216)
 
 #### Parameters
 
@@ -161,7 +161,7 @@ public function listAllStores(?int $maxItems = NULL): OpenFGA\Results\FailureInt
 
 Lists all stores with simplified pagination. This method retrieves all accessible stores, automatically handling pagination to return a complete collection. It abstracts away the complexity of dealing with continuation tokens for most use cases.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L257)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L257)
 
 #### Parameters
 
@@ -185,7 +185,7 @@ public function listStores(
 
 Lists stores with pagination support. This method retrieves stores with explicit pagination control, allowing you to specify continuation tokens for iterating through large result sets.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Services/StoreService.php#L299)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Services/StoreService.php#L299)
 
 #### Parameters
 

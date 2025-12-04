@@ -32,7 +32,7 @@ Interface for tuple writing response objects. This interface defines the contrac
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php)
 
 ## Implements
 
@@ -54,7 +54,7 @@ public function getErrors(): array<Throwable>
 
 Get all errors that occurred during processing.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L28)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L28)
 
 #### Returns
 
@@ -69,7 +69,7 @@ public function getFailedChunks(): int
 
 Get the number of failed chunks.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L35)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L35)
 
 #### Returns
 
@@ -84,7 +84,7 @@ public function getFirstError(): Throwable|null
 
 Get the first error that occurred.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L42)
 
 #### Returns
 
@@ -99,7 +99,7 @@ public function getSuccessRate(): float
 
 Calculate the success rate of the operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L56)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L56)
 
 #### Returns
 
@@ -114,7 +114,7 @@ public function getSuccessfulChunks(): int
 
 Get the number of successfully processed chunks.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L49)
 
 #### Returns
 
@@ -129,7 +129,7 @@ public function getTotalChunks(): int
 
 Get the total number of chunks processed (non-transactional mode).
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L63)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L63)
 
 #### Returns
 
@@ -144,7 +144,7 @@ public function getTotalOperations(): int
 
 Get the total number of tuple operations processed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L70)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L70)
 
 #### Returns
 
@@ -159,7 +159,7 @@ public function isCompleteFailure(): bool
 
 Check if all operations failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L77)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L77)
 
 #### Returns
 
@@ -174,7 +174,7 @@ public function isCompleteSuccess(): bool
 
 Check if all operations completed successfully.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L84)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L84)
 
 #### Returns
 
@@ -189,7 +189,7 @@ public function isPartialSuccess(): bool
 
 Check if some operations succeeded and some failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L91)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L91)
 
 #### Returns
 
@@ -204,7 +204,7 @@ public function isTransactional(): bool
 
 Check if the operation was executed in transactional mode.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L98)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L98)
 
 #### Returns
 
@@ -219,7 +219,7 @@ public function throwOnFailure(): void
 
 Throw an exception if any operations failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L105)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/WriteTuplesResponseInterface.php#L105)
 
 #### Returns
 

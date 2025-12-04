@@ -23,7 +23,7 @@ Interface for reading test assertions from an authorization model. This interfac
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadAssertionsRequestInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadAssertionsRequestInterface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getModel(): string
 
 Get the authorization model ID to read assertions from. Specifies which version of the authorization model should have its assertions retrieved. Assertions are tied to specific model versions, ensuring that tests remain relevant to the particular authorization schema they were designed to validate.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadAssertionsRequestInterface.php#L42)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadAssertionsRequestInterface.php#L42)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getRequest(StreamFactoryInterface $streamFactory): RequestContex
 
 Build a request context for HTTP execution. Transforms the request object into a standardized HTTP request context that can be executed by the OpenFGA HTTP client. This method handles all aspects of request preparation including parameter serialization, URL construction, header configuration, and body stream creation. The method validates that all required parameters are present and properly formatted, serializes complex objects to JSON, constructs the appropriate API endpoint URL, and creates the necessary HTTP message body streams.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/RequestInterface.php#L57)
 
 #### Parameters
 
@@ -81,7 +81,7 @@ public function getStore(): string
 
 Get the store ID containing the assertions to read. Identifies which OpenFGA store contains the authorization model and its associated test assertions. Assertions are stored alongside the models they test, providing a complete testing framework within each store&#039;s context.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Requests/ReadAssertionsRequestInterface.php#L54)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Requests/ReadAssertionsRequestInterface.php#L54)
 
 #### Returns
 

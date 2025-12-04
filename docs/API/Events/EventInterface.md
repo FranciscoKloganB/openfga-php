@@ -24,7 +24,7 @@ Base interface for all domain events. Events represent something significant tha
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php)
 
 ## Methods
 
@@ -37,7 +37,7 @@ public function getEventId(): string
 
 Get the unique identifier for this event.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php#L22)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php#L22)
 
 #### Returns
 
@@ -52,7 +52,7 @@ public function getEventType(): string
 
 Get the name/type of this event.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php#L29)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php#L29)
 
 #### Returns
 
@@ -67,7 +67,7 @@ public function getOccurredAt(): DateTimeImmutable
 
 Get when this event occurred.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php#L36)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php#L36)
 
 #### Returns
 
@@ -82,7 +82,7 @@ public function getPayload(): array<string, mixed>
 
 Get the event payload data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php#L43)
 
 #### Returns
 
@@ -97,7 +97,7 @@ public function isPropagationStopped(): bool
 
 Check if event propagation should be stopped.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php#L50)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php#L50)
 
 #### Returns
 
@@ -112,7 +112,7 @@ public function stopPropagation(): void
 
 Stop event propagation to remaining listeners.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/EventInterface.php#L55)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/EventInterface.php#L55)
 
 #### Returns
 

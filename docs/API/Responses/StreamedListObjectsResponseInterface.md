@@ -20,7 +20,7 @@ Response interface for streaming objects that a user has a specific relationship
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Responses/StreamedListObjectsResponseInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/StreamedListObjectsResponseInterface.php)
 
 ## Related Classes
 
@@ -38,7 +38,7 @@ public function getObject(): string
 
 Get a single object identifier from a streamed response chunk.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Responses/StreamedListObjectsResponseInterface.php#L53)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Responses/StreamedListObjectsResponseInterface.php#L53)
 
 #### Returns
 

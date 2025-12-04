@@ -4,14 +4,14 @@
   <h1>OpenFGA PHP SDK</h1>
 
   <p>
-    <a href="https://codecov.io/gh/evansims/openfga-php" target="_blank"><img src="https://codecov.io/gh/evansims/openfga-php/graph/badge.svg?token=DYXXS91T0S" alt="codecov" /></a>
-    <a href="https://shepherd.dev/github/evansims/openfga-php" target="_blank"><img src="https://shepherd.dev/github/evansims/openfga-php/coverage.svg" alt="Psalm Type Coverage" /></a>
+    <a href="https://codecov.io/gh/franciscokloganb/openfga-php" target="_blank"><img src="https://codecov.io/gh/franciscokloganb/openfga-php/graph/badge.svg?token=DYXXS91T0S" alt="codecov" /></a>
+    <a href="https://shepherd.dev/github/franciscokloganb/openfga-php" target="_blank"><img src="https://shepherd.dev/github/franciscokloganb/openfga-php/coverage.svg" alt="Psalm Type Coverage" /></a>
     <a href="https://www.bestpractices.dev/projects/10666"><img src="https://www.bestpractices.dev/projects/10666/badge"></a>
   </p>
 
   <p>Stop writing authorization logic. Start asking questions.</p>
 
-  <p><code>composer require evansims/openfga-php</code></p>
+  <p><code>composer require franciscokloganb/openfga-php</code></p>
 </div>
 
 <p><br /></p>
@@ -25,7 +25,7 @@
 ## Installation
 
 ```bash
-composer require evansims/openfga-php
+composer require franciscokloganb/openfga-php
 ```
 
 <p><br /></p>
@@ -54,7 +54,7 @@ $canEdit = allowed(
 // Zero business logic coupling. Pure authorization.
 ```
 
-See [the documentation](https://github.com/evansims/openfga-php/wiki) to get started.
+See [the documentation](https://github.com/franciscokloganb/openfga-php/wiki) to get started.
 
 <p><br /></p>
 

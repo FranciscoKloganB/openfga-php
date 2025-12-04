@@ -23,7 +23,7 @@ Defines a tuple-to-userset operation in authorization models. TupleToUsersetV1 r
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php)
 
 ## Implements
 
@@ -45,7 +45,7 @@ public function getComputedUserset(): ObjectRelationInterface
 
 Get the userset that will be computed based on the tupleset. This represents the object-relation pair that defines which userset should be computed for each tuple found in the tupleset. The computed userset determines the final set of users resulting from the tuple-to-userset operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php#L32)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php#L32)
 
 #### Returns
 
@@ -60,7 +60,7 @@ public function getTupleset(): ObjectRelationInterface
 
 Get the tupleset (object-relation pair) that defines which tuples to use for computation. This represents the object-relation pair that identifies which tuples should be examined to compute the final userset. For each matching tuple, the computed userset will be evaluated to determine the resulting users.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php#L43)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php#L43)
 
 #### Returns
 
@@ -73,7 +73,7 @@ public function jsonSerialize(): array
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/TupleToUsersetV1Interface.php#L49)
 
 #### Returns
 

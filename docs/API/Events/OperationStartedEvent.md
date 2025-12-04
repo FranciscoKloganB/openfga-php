@@ -29,7 +29,7 @@ Event fired when a high-level operation starts. This event tracks business opera
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Events/OperationStartedEvent.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/OperationStartedEvent.php)
 
 ## Implements
 
@@ -44,7 +44,7 @@ public function getContext(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L37)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L37)
 
 #### Returns
 
@@ -59,7 +59,7 @@ public function getEventId(): string
 
 Get the unique identifier for this event.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L40)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L40)
 
 #### Returns
 
@@ -74,7 +74,7 @@ public function getEventType(): string
 
 Get the name/type of this event.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L49)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L49)
 
 #### Returns
 
@@ -89,7 +89,7 @@ public function getModelId(): string|null
 
 Get the model ID for the operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L47)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L47)
 
 #### Returns
 
@@ -104,7 +104,7 @@ public function getOccurredAt(): DateTimeImmutable
 
 Get when this event occurred.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L58)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L58)
 
 #### Returns
 
@@ -119,7 +119,7 @@ public function getOperation(): string
 
 Get the OpenFGA operation name.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L57)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L57)
 
 #### Returns
 
@@ -134,7 +134,7 @@ public function getPayload(): array
 
 Get the event payload data.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L67)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L67)
 
 #### Returns
 
@@ -149,7 +149,7 @@ public function getStoreId(): string|null
 
 Get the store ID for the operation.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L67)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/OperationStartedEvent.php#L67)
 
 #### Returns
 
@@ -164,7 +164,7 @@ public function isPropagationStopped(): bool
 
 Check if event propagation should be stopped.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L76)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L76)
 
 #### Returns
 
@@ -179,7 +179,7 @@ public function stopPropagation(): void
 
 Stop event propagation to remaining listeners.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Events/AbstractEvent.php#L85)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Events/AbstractEvent.php#L85)
 
 #### Returns
 

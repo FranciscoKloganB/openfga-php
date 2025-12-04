@@ -35,7 +35,7 @@ Represents the result of a batch tuple operation. This model tracks the results 
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php)
 
 ## Implements
 
@@ -64,7 +64,7 @@ public function getErrors(): array
 
 Get all errors from failed chunks.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L78)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L78)
 
 #### Returns
 
@@ -79,7 +79,7 @@ public function getFailedChunks(): int
 
 Get the number of chunks that failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L87)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L87)
 
 #### Returns
 
@@ -94,7 +94,7 @@ public function getFirstError(): ?Throwable
 
 Get the first error that occurred.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L96)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L96)
 
 #### Returns
 
@@ -109,7 +109,7 @@ public function getResponses(): array
 
 Get all successful responses from completed chunks.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L105)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L105)
 
 #### Returns
 
@@ -124,7 +124,7 @@ public function getSuccessRate(): float
 
 Calculate the success rate as a percentage.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L123)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L123)
 
 #### Returns
 
@@ -139,7 +139,7 @@ public function getSuccessfulChunks(): int
 
 Get the number of chunks that completed successfully.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L114)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L114)
 
 #### Returns
 
@@ -154,7 +154,7 @@ public function getTotalChunks(): int
 
 Get the total number of chunks that were processed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L136)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L136)
 
 #### Returns
 
@@ -169,7 +169,7 @@ public function getTotalOperations(): int
 
 Get the total number of tuple operations that were requested.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L145)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L145)
 
 #### Returns
 
@@ -184,7 +184,7 @@ public function isCompleteFailure(): bool
 
 Check if all chunks failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L154)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L154)
 
 #### Returns
 
@@ -199,7 +199,7 @@ public function isCompleteSuccess(): bool
 
 Check if all chunks completed successfully.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L163)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L163)
 
 #### Returns
 
@@ -214,7 +214,7 @@ public function isPartialSuccess(): bool
 
 Check if some chunks succeeded and some failed.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L172)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L172)
 
 #### Returns
 
@@ -227,7 +227,7 @@ public function jsonSerialize(): array<string, mixed>
 
 ```
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L183)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L183)
 
 #### Returns
 
@@ -244,7 +244,7 @@ public function schema(): SchemaInterface
 
 Get the JSON schema for this model.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResultInterface.php#L25)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResultInterface.php#L25)
 
 #### Returns
 
@@ -259,7 +259,7 @@ public function throwOnFailure(): void
 
 Throw an exception if any chunks failed. If there were failures, throws the first error that occurred. This is useful for treating partial failures as complete failures when strict error handling is required.
 
-[View source](https://github.com/evansims/openfga-php/blob/main/src/Models/BatchTupleResult.php#L201)
+[View source](https://github.com/franciscokloganb/openfga-php/blob/main/src/Models/BatchTupleResult.php#L201)
 
 #### Returns
 

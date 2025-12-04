@@ -17,7 +17,7 @@ Manages ambient context for OpenFGA operations. This interface provides a way to
 
 ## Source
 
-[View source code](https://github.com/evansims/openfga-php/blob/main/src/Context/ContextInterface.php)
+[View source code](https://github.com/franciscokloganb/openfga-php/blob/main/src/Context/ContextInterface.php)
 
 ## Related Classes
 
